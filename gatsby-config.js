@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Starter Landing Page`,
-    description: `A barebone landing page starter with some minimal styles.`,
-    author: `@gillkyle`,
+    title: `Oncie `,
+    description: `Oncie is the best audio live experience`,
+    author: `Oncie team`,
     siteUrl: `https://gatsby-starter-landing-page.netlify.com`,
   },
   plugins: [
