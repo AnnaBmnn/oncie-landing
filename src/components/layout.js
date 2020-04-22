@@ -10,8 +10,9 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Footer from "./footer"
-import "../styles/typographie.css"
-import "../styles/default.css"
+import FormMailchimp from "./form-mailchimp"
+import "../styles/typographie.scss"
+import "../styles/default.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -33,6 +34,7 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
         </div>
+        <FormMailchimp></FormMailchimp>
         <Footer siteTitle={data.site.siteMetadata.title} />
       </>
     )}

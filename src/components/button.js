@@ -1,7 +1,7 @@
 import React from "react"
 
 import { COLORS, BORDER_RADIUS, GRADIENT } from "../styles/constants"
-import "../styles/button.css"
+import "../styles/components/button.scss"
 
 const Button = ({ children }) => (
   <button
