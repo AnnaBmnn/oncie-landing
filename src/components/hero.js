@@ -30,11 +30,6 @@ const Header = ({ siteTitle }) => (
     <p style={{ textAlign: "center", maxWidth: 440 }}>
       Oncie Landing page very soon ui ui
     </p>
-    <ul>
-      <li>add font</li>
-      <li>add color</li>
-      <li>add gta</li>
-    </ul>
     <Button>Get Early Access</Button>
     <div style={{ margin: 60, width: `250px`, position: "relative" }}>
       <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
