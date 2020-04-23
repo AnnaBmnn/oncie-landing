@@ -14,6 +14,7 @@ import Footer from "../footer/footer"
 import "../../styles/typographie.scss"
 import "../../styles/constants.scss"
 import "../../styles/default.scss"
+import "../../styles/commun.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,11 +29,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div
-          style={{
-            padding: "0 1rem",
-          }}
-        >
+        <div>
           <main>{children}</main>
         </div>
         <Footer siteTitle={data.site.siteMetadata.title} />

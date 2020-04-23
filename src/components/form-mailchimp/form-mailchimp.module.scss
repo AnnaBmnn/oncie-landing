@@ -1,17 +1,18 @@
 @import "../../styles/constants.scss";
 
-.formMailchimp__wrapper {
-  text-align: center;
-}
-
 .formMailchimp {
   display: flex;
-  justify-content: space-evenly;
+  &.center {
+    justify-content: center;
+  }
 }
 
 .formMailchimp__input {
-  border: 1px solid $blue;
+  width: 4 * $column + $goutiere * 3;
+  margin-right: $goutiere / 2;
+  padding: 0 1.5rem;
+  font-weight: 600;
   box-shadow: none;
-  width: 45%;
-  border-radius: 10px;
+  border-radius: $borderRadius;
+  border: 2px solid $primaryLighterColor;
 }

@@ -1,0 +1,37 @@
+@import "../../styles/constants.scss";
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: $column * 9 + $goutiere * 8;
+  margin-bottom: 15vh;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &:nth-of-type(2n) {
+    align-self: flex-start;
+  }
+  &:nth-of-type(2n) {
+    align-self: flex-end;
+    .imgContainer {
+      order: 2;
+    }
+    .txtContainer {
+      order: 1;
+    }
+  }
+}
+
+.imgContainer {
+  width: $column * 4 + $goutiere * 3;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.txtContainer {
+  padding-top: 20px;
+  width: $column * 4 + $goutiere * 3;
+}

@@ -1,7 +1,10 @@
+@import "./constants.scss";
+
 html {
   font-family: "Gellix", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: $black;
 }
 body {
   margin: 0;
@@ -158,6 +161,8 @@ html {
   font: 112.5%/1.45em sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden;
+  color: $black;
 }
 * {
   box-sizing: inherit;
@@ -169,7 +174,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: $black;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
   font-family: "Gellix", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -188,7 +196,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;
@@ -428,6 +435,7 @@ p *:last-child {
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

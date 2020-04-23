@@ -1,0 +1,41 @@
+@import "../../styles/constants.scss";
+
+.sectionHeader {
+  padding-top: 17vh;
+  &.big {
+    width: $column * 8 + $goutiere * 7;
+    margin: 0 auto;
+  }
+  &.small {
+    width: $column * 6 + $goutiere * 5;
+    margin: 0 auto;
+  }
+  &.noPadding {
+    padding-top: 0;
+
+    .description {
+      margin: 0 auto;
+      width: $column * 6 + $goutiere * 5;
+    }
+  }
+
+  &.padding {
+    padding-top: 17vh;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.titleHighlight {
+  background: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.description {
+  text-align: center;
+  color: $grey800;
+}

@@ -1,0 +1,33 @@
+@import "../../styles/constants.scss";
+
+.insert {
+  position: relative;
+  background: $gradient;
+  color: white;
+  border-radius: 32px;
+}
+
+.container {
+  padding: 42vh 0 0;
+}
+
+.title {
+  width: 70%;
+  padding: 84px 0;
+  margin: 0 112px 0 560px;
+  width: 3 * $column + 3 * $goutiere;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 120%;
+}
+
+.img {
+  position: absolute;
+  left: $column + $goutiere;
+  bottom: -0;
+
+  width: 3 * $column + 2 * $goutiere;
+  height: auto;
+}

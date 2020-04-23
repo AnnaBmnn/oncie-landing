@@ -1,0 +1,20 @@
+@import "../../styles/constants.scss";
+
+.blocImgTxt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15vh 0;
+}
+
+.imgContainer {
+  width: $column * 5 + $goutiere * 4;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.txtContainer {
+  width: $column * 4 + $goutiere * 3;
+}

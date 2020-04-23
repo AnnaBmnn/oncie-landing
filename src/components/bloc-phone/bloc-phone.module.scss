@@ -1,0 +1,25 @@
+@import "../../styles/constants.scss";
+
+.blocPhone {
+  background-color: $purple200;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.reverse {
+    padding-bottom: 15vh;
+    .img {
+      order: 1;
+    }
+    .containerHeader {
+      order: 2;
+    }
+  }
+}
+
+.img {
+  width: $column * 4 + $goutiere * 3;
+}

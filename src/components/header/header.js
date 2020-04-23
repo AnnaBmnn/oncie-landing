@@ -2,11 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import Logo from "../logo/logo"
+
 import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle }) => (
   <header className={headerStyles.header}>
-    <div>
+    <div className={headerStyles.container}>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -15,7 +17,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <Logo />
         </Link>
       </h1>
     </div>

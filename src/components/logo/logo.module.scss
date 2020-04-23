@@ -1,0 +1,27 @@
+.logo {
+  position: fixed;
+  z-index: 10;
+  mix-blend-mode: difference;
+}
+.logo__img {
+  width: 130px;
+  height: auto;
+  transform: translateX(-3px);
+}
+
+.logo__title {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}

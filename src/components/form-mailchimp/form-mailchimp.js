@@ -5,7 +5,11 @@ import Button from "../button/button"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import formMailchimpStyles from "./form-mailchimp.module.scss"
 
-const FormMailchimp = () => {
+const FormMailchimp = ({ center }) => {
+  const centerClass =
+    center == "center"
+      ? formMailchimpStyles.center
+      : formMailchimpStyles.noCenter
   const [email, setEmail] = useState()
   const [message, setMessage] = useState()
 
@@ -29,10 +33,10 @@ const FormMailchimp = () => {
   }
 
   return (
-    <div className={formMailchimpStyles.formMailchimp__wrapper}>
+    <div className={`${formMailchimpStyles.formMailchimp__wrapper} `}>
       <form
         onSubmit={handleSubmit}
-        className={formMailchimpStyles.formMailchimp}
+        className={`${formMailchimpStyles.formMailchimp} ${centerClass}`}
       >
         <input
           className={formMailchimpStyles.formMailchimp__input}

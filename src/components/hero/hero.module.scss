@@ -1,6 +1,28 @@
+@import "../../styles/constants.scss";
+
 .hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 4rem 1rem;
+  position: relative;
+  min-height: 100vh;
+  background: $gradient;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  padding: 17vh 0;
+}
+
+.title {
+  width: 70%;
+  margin-bottom: 60px;
+  font-size: 4.45em;
+  font-size: 4em;
+}
+
+.img {
+  position: absolute;
+  right: 0;
+  bottom: -0;
+  height: 95vh;
+  width: auto;
 }
