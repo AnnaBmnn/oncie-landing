@@ -1,277 +1,100 @@
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Regular/Inter-Regular.eot");
-  src: url("../fonts/inter/Inter-Regular/Inter-Regular.eot?#iefix")
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-MediumItalic.eot");
+  src: local("Gellix Medium Italic"), local("Gellix-MediumItalic"),
+    url("../fonts/Gellix/Gellix-MediumItalic.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/inter/Inter-Regular/Inter-Regular.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Regular/Inter-Regular.woff") format("woff"),
-    url("../fonts/inter/Inter-Regular/Inter-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Medium/Inter-Medium.eot");
-  src: url("../fonts/inter/Inter-Medium/Inter-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-Medium/Inter-Medium.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Medium/Inter-Medium.woff") format("woff"),
-    url("../fonts/inter/Inter-Medium/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-MediumItalic/Inter-MediumItalic.eot");
-  src: url("../fonts/inter/Inter-MediumItalic/Inter-MediumItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-MediumItalic/Inter-MediumItalic.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-MediumItalic/Inter-MediumItalic.woff")
-      format("woff"),
-    url("../fonts/inter/Inter-MediumItalic/Inter-MediumItalic.woff2")
-      format("woff2");
+    url("../fonts/Gellix/Gellix-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-MediumItalic.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Black/Inter-Black.eot");
-  src: url("../fonts/inter/Inter-Black/Inter-Black.eot?#iefix")
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-BoldItalic.eot");
+  src: local("Gellix Bold Italic"), local("Gellix-BoldItalic"),
+    url("../fonts/Gellix/Gellix-BoldItalic.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/inter/Inter-Black/Inter-Black.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Black/Inter-Black.woff") format("woff"),
-    url("../fonts/inter/Inter-Black/Inter-Black.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.eot");
-  src: url("../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.woff")
-      format("woff"),
-    url("../fonts/inter/Inter-BlackItalic/Inter-BlackItalic.woff2")
-      format("woff2");
-  font-weight: 800;
+    url("../fonts/Gellix/Gellix-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-BoldItalic.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Bold/Inter-Bold.eot");
-  src: url("../fonts/inter/Inter-Bold/Inter-Bold.eot?#iefix")
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-SemiBold.eot");
+  src: local("Gellix SemiBold"), local("Gellix-SemiBold"),
+    url("../fonts/Gellix/Gellix-SemiBold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/inter/Inter-Bold/Inter-Bold.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Bold/Inter-Bold.woff") format("woff"),
-    url("../fonts/inter/Inter-Bold/Inter-Bold.woff2") format("woff2");
+    url("../fonts/Gellix/Gellix-SemiBold.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-SemiBold.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-BoldItalic/Inter-BoldItalic.eot");
-  src: url("../fonts/inter/Inter-BoldItalic/Inter-BoldItalic.eot?#iefix")
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-RegularItalic.eot");
+  src: local("Gellix Regular Italic"), local("Gellix-RegularItalic"),
+    url("../fonts/Gellix/Gellix-RegularItalic.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/inter/Inter-BoldItalic/Inter-BoldItalic.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-BoldItalic/Inter-BoldItalic.woff") format("woff"),
-    url("../fonts/inter/Inter-BoldItalic/Inter-BoldItalic.woff2")
-      format("woff2");
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ExtraBold/Inter-ExtraBold.eot");
-  src: url("../fonts/inter/Inter-ExtraBold/Inter-ExtraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-ExtraBold/Inter-ExtraBold.ttf") format("truetype"),
-    url("../fonts/inter/Inter-ExtraBold/Inter-ExtraBold.woff") format("woff"),
-    url("../fonts/inter/Inter-ExtraBold/Inter-ExtraBold.woff2") format("woff2");
-  font-weight: 650;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ExtraBoldItalic/Inter-ExtraBoldItalic.eot");
-  src: url("../fonts/inter/Inter-ExtraBoldItalic/Inter-ExtraBoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-ExtraBoldItalic/Inter-ExtraBoldItalic.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-ExtraBoldItalic/Inter-ExtraBoldItalic.woff")
-      format("woff"),
-    url("../fonts/inter/Inter-ExtraBoldItalic/Inter-ExtraBoldItalic.woff2")
-      format("woff2");
-  font-weight: 650;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ExtraLight/Inter-ExtraLight-BETA.eot");
-  src: url("../fonts/inter/Inter-ExtraLight/Inter-ExtraLight-BETA.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-ExtraLight/Inter-ExtraLight-BETA.woff2")
-      format("woff2");
-  font-weight: 250;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ExtraLight/Inter-ExtraLightBETA.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-ExtraLight/Inter-ExtraLightBETA.woff")
-      format("woff");
-  font-weight: 250;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ExtraLightItalic/Inter-ExtraLightItalic-BETA.eot");
-  src: url("../fonts/inter/Inter-ExtraLightItalic/Inter-ExtraLightItalic-BETA.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-ExtraLightItalic/Inter-ExtraLightItalic-BETA.woff2")
-      format("woff2");
-  font-weight: 250;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ExtraLightItalic/Inter-ExtraLightItalicBETA.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-ExtraLightItalic/Inter-ExtraLightItalicBETA.woff")
-      format("woff");
-  font-weight: 250;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Italic/Inter-Italic.eot");
-  src: url("../fonts/inter/Inter-Italic/Inter-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-Italic/Inter-Italic.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Italic/Inter-Italic.woff") format("woff"),
-    url("../fonts/inter/Inter-Italic/Inter-Italic.woff2") format("woff2");
+    url("../fonts/Gellix/Gellix-RegularItalic.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-RegularItalic.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-RegularItalic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Light/Inter-Light-BETA.eot");
-  src: url("../fonts/inter/Inter-Light/Inter-Light-BETA.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-Light/Inter-Light-BETA.woff2") format("woff2");
-  font-weight: 300;
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-Bold.eot");
+  src: local("Gellix Bold"), local("Gellix-Bold"),
+    url("../fonts/Gellix/Gellix-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gellix/Gellix-Bold.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-Bold.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Light/Inter-LightBETA.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Light/Inter-LightBETA.woff") format("woff");
-  font-weight: 300;
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-Medium.eot");
+  src: local("Gellix Medium"), local("Gellix-Medium"),
+    url("../fonts/Gellix/Gellix-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gellix/Gellix-Medium.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-Medium.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-LightItalic/Inter-LightItalic-BETA.eot");
-  src: url("../fonts/inter/Inter-LightItalic/Inter-LightItalic-BETA.eot?#iefix")
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-SemiBoldItalic.eot");
+  src: local("Gellix SemiBold Italic"), local("Gellix-SemiBoldItalic"),
+    url("../fonts/Gellix/Gellix-SemiBoldItalic.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/inter/Inter-LightItalic/Inter-LightItalic-BETA.woff2")
-      format("woff2");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-LightItalic/Inter-LightItalicBETA.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-LightItalic/Inter-LightItalicBETA.woff")
-      format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-SemiBold/Inter-SemiBold.eot");
-  src: url("../fonts/inter/Inter-SemiBold/Inter-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-SemiBold/Inter-SemiBold.ttf") format("truetype"),
-    url("../fonts/inter/Inter-SemiBold/Inter-SemiBold.woff") format("woff"),
-    url("../fonts/inter/Inter-SemiBold/Inter-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-SemiBoldItalic/Inter-SemiBoldItalic.eot");
-  src: url("../fonts/inter/Inter-SemiBoldItalic/Inter-SemiBoldItalic.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-SemiBoldItalic/Inter-SemiBoldItalic.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-SemiBoldItalic/Inter-SemiBoldItalic.woff")
-      format("woff"),
-    url("../fonts/inter/Inter-SemiBoldItalic/Inter-SemiBoldItalic.woff2")
-      format("woff2");
+    url("../fonts/Gellix/Gellix-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-SemiBoldItalic.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Thin/Inter-Thin-BETA.eot");
-  src: url("../fonts/inter/Inter-Thin/Inter-Thin-BETA.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-Thin/Inter-Thin-BETA.woff2") format("woff2");
-  font-weight: 200;
+  font-family: "Gellix";
+  src: url("../fonts/Gellix/Gellix-Regular.eot");
+  src: local("Gellix Regular"), local("Gellix-Regular"),
+    url("../fonts/Gellix/Gellix-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gellix/Gellix-Regular.woff2") format("woff2"),
+    url("../fonts/Gellix/Gellix-Regular.woff") format("woff"),
+    url("../fonts/Gellix/Gellix-Regular.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-Thin/Inter-ThinBETA.ttf") format("truetype"),
-    url("../fonts/inter/Inter-Thin/Inter-ThinBETA.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ThinItalic/Inter-ThinItalic-BETA.eot");
-  src: url("../fonts/inter/Inter-ThinItalic/Inter-ThinItalic-BETA.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/inter/Inter-ThinItalic/Inter-ThinItalic-BETA.woff2")
-      format("woff2");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter/Inter-ThinItalic/Inter-ThinItalicBETA.ttf")
-      format("truetype"),
-    url("../fonts/inter/Inter-ThinItalic/Inter-ThinItalicBETA.woff")
-      format("woff");
-  font-weight: 200;
-  font-style: italic;
 }
