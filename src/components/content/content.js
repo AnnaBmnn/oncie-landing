@@ -1,23 +1,18 @@
 import React from "react"
 
-import feature from "../images/feature.png"
-import SectionHeader from "./section-header"
-import { COLORS } from "../styles/constants"
+import feature from "../../images/feature.png"
+import SectionHeader from "../section-header/section-header"
+
+import { COLORS } from "../../styles/constants"
+import contentStyles from "./content.module.scss"
 
 const Content = () => (
-  <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
+  <div className={contentStyles.content}>
     <SectionHeader
       title="Minimal Features"
       description="Don't spend time ripping out unneeded plugins and bloat."
     />
-    <content
-      style={{
-        display: "grid",
-        alignItems: "center",
-        justifyContent: "center",
-        gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
-      }}
-    >
+    <content className={contentStyles.content__container}>
       <div>
         <h3>What you need to Start</h3>
         <p style={{ color: COLORS.gray }}>

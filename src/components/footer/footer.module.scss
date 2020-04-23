@@ -1,0 +1,15 @@
+@import "../../styles/constants.scss";
+
+.footer {
+  padding: 1rem;
+  background-color: $lightGray;
+}
+
+.footer__wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+}

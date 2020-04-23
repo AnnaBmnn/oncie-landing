@@ -1,45 +1,49 @@
 import React, { useState } from "react"
 
-import PropTypes from "prop-types"
+import Button from "../button/button"
 
 import addToMailchimp from "gatsby-plugin-mailchimp"
+import formMailchimpStyles from "./form-mailchimp.module.scss"
 
 const FormMailchimp = () => {
   const [email, setEmail] = useState()
   const [message, setMessage] = useState()
-  const [disabled, setDisabled] = useState(false)
 
   const handleSubmit = async event => {
     event.preventDefault()
-    setDisabled(true)
     setMessage("Sending...")
     const response = await addToMailchimp(email)
     if (response.result === "error") {
       if (response.msg.toLowerCase().includes("already subscribed")) {
-        setMessage("You're already on to the list!")
+        setMessage("Vous êtes déjà sur la liste, merci!")
       } else {
-        setMessage("Some error occured while subscribing you to the list.")
+        setMessage(
+          "Il y a eu des erreurs lors de votre inscription à la newsletter."
+        )
       }
-      setDisabled(false)
     } else {
       setMessage(
-        "Thanks! Please check your e-mail and click the confirmation link."
+        "Merci ! Vérifiez vos emails et cliquez sur le lien de confirmation."
       )
     }
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={formMailchimpStyles.formMailchimp__wrapper}>
+      <form
+        onSubmit={handleSubmit}
+        className={formMailchimpStyles.formMailchimp}
+      >
         <input
+          className={formMailchimpStyles.formMailchimp__input}
           aria-label="Email address"
           onChange={event => setEmail(event.target.value)}
-          placeholder="Enter your email"
+          placeholder="Entrez votre email"
           required
           type="email"
         />
         <div>
-          <button>Sign up</button>
+          <Button>Accédez à la béta</Button>
         </div>
       </form>
       <div>{message}</div>

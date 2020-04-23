@@ -1,6 +1,6 @@
 import React from "react"
 
-import { COLORS } from "../styles/constants"
+import { COLORS } from "../../styles/constants"
 
 const SectionHeader = ({ title, description }) => (
   <>
