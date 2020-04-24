@@ -1,5 +1,28 @@
+@import "../../styles/constants.scss";
+
 .section {
   position: relative;
   width: 1088px;
   margin: 0 auto;
+  max-width: 90vw;
+
+  @media screen and (min-width: $mediumMax) {
+    //up medium
+    width: 1088px;
+  }
+
+  @media screen and (max-width: $mediumMax) {
+    //medium
+    width: 864px;
+  }
+
+  @media screen and (max-width: $smallMax) {
+    //medium
+    width: 640px;
+  }
+
+  @media screen and (max-width: $baseMax) {
+    //medium
+    width: 414px;
+  }
 }
