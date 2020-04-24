@@ -9,6 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 640px) {
+    border-top: none;
+    padding: 100px 0 40px;
+  }
 }
 
 .footerLogo {
@@ -16,6 +20,10 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  @media screen and (max-width: 640px) {
+    top: 20px;
+    transform: translateY(0);
+  }
 }
 
 .footerSocials {
@@ -28,6 +36,15 @@
   font-weight: 600;
   font-size: 18px;
   // line-height: 32px;
+  @media screen and (max-width: $mediumMax) {
+    span {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    top: 20px;
+    transform: translateY(10px);
+  }
 }
 
 .linksContainer {
@@ -40,5 +57,8 @@
 
   &:last-of-type {
     margin-right: 0;
+  }
+  @media screen and (max-width: $mediumMax) {
+    margin-right: 18px;
   }
 }

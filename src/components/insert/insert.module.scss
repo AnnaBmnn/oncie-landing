@@ -5,14 +5,21 @@
   background: $gradient;
   color: white;
   border-radius: 32px;
+  @media screen and (max-width: 630px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .container {
   padding: 42vh 0 0;
+  @media screen and (max-width: 630px) {
+    padding: 12vh 0 0;
+  }
 }
 
 .title {
-  width: 70%;
   padding: 84px 0;
   margin: 0 112px 0 560px;
   width: 3 * $column + 3 * $goutiere;
@@ -21,6 +28,29 @@
   font-weight: bold;
   font-size: 64px;
   line-height: 120%;
+
+  @media screen and (max-width: $mediumMax) {
+    padding: 84px 0;
+    margin: 0 $column 0 48%;
+    width: 3 * $column + 3 * $goutiere;
+  }
+
+  @media screen and (max-width: $smallMax) {
+    padding: 64px 0;
+    margin: 0 0 0 50%;
+    font-size: 48px;
+    line-height: 64px;
+  }
+  @media screen and (max-width: $baseMax) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  @media screen and (max-width: 630px) {
+    text-align: center;
+    padding: 40px 0 30px;
+    margin: 0;
+    width: 2 * $column + 3 * $goutiere;
+  }
 }
 
 .img {
@@ -30,4 +60,19 @@
 
   width: 3 * $column + 2 * $goutiere;
   height: auto;
+
+  @media screen and (max-width: $mediumMax) {
+    left: $column - 10px;
+    width: 2 * $column + 3 * $goutiere;
+  }
+  @media screen and (max-width: $mediumMax) {
+    left: 6%;
+    width: 40%;
+  }
+  @media screen and (max-width: 630px) {
+    position: relative;
+    left: unset;
+    bottom: unset;
+    width: 2 * $column + 2 * $goutiere;
+  }
 }

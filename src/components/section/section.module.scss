@@ -17,12 +17,12 @@
   }
 
   @media screen and (max-width: $smallMax) {
-    //medium
+    //small
     width: 640px;
   }
 
   @media screen and (max-width: $baseMax) {
-    //medium
+    //base
     width: 414px;
   }
 }

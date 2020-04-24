@@ -1,3 +1,8 @@
+@import "../../styles/constants.scss";
+
 .cta {
   margin-bottom: 17vh;
+  @media screen and (max-width: $smallMax) {
+    margin-bottom: 10vh;
+  }
 }

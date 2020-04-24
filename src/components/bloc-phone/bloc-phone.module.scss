@@ -21,5 +21,6 @@
 }
 
 .img {
+  transform: translateX(-17px);
   width: $column * 4 + $goutiere * 3;
 }

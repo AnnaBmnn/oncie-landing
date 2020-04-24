@@ -8,7 +8,7 @@ const Feature = ({ imgSrc, title, description }) => (
       <img src={imgSrc} alt="features" />
     </div>
     <div className={featureStyles.txtContainer}>
-      <h3 className={`title4`}>{title}</h3>
+      <h3 className={`title4 ${featureStyles.title}`}>{title}</h3>
       <div className={`description`}>{description}</div>
     </div>
   </div>

@@ -33,7 +33,7 @@ const FormMailchimp = ({ center }) => {
   }
 
   return (
-    <div className={`${formMailchimpStyles.formMailchimp__wrapper} `}>
+    <div className={`${formMailchimpStyles.wrapper} `}>
       <form
         onSubmit={handleSubmit}
         className={`${formMailchimpStyles.formMailchimp} ${centerClass}`}

@@ -10,12 +10,34 @@
 
 .container {
   padding: 17vh 0;
+  @media screen and (max-width: $mediumMax) {
+    //medium
+    padding: 17vh 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: $smallMax) {
+    padding: 20vh 0 0;
+  }
 }
 
 .title {
   width: 70%;
   margin-bottom: 60px;
   font-size: 4.45em;
+  @media screen and (max-width: $mediumMax) {
+    //medium
+    width: $column * 6 + $goutiere * 7;
+    margin: 0 auto 72px;
+    text-align: center;
+  }
+  @media screen and (max-width: $smallMax) {
+    //small
+    width: 100%;
+    font-size: 56px;
+    line-height: 72px;
+  }
 }
 
 .img {
@@ -24,4 +46,15 @@
   bottom: -0;
   height: 95vh;
   width: auto;
+  @media screen and (max-width: $mediumMax) {
+    position: relative;
+    right: unset;
+    bottom: unset;
+    margin-top: 52px;
+  }
+  @media screen and (max-width: $smallMax) {
+    width: $column * 2 + $goutiere * 4;
+    height: auto;
+    margin-top: 12px;
+  }
 }

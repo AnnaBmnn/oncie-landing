@@ -1,9 +1,23 @@
 @import "../../styles/constants.scss";
-
+.wrapper {
+  @media screen and (max-width: $baseMax) {
+    width: 100%;
+  }
+}
 .formMailchimp {
   display: flex;
   &.center {
     justify-content: center;
+  }
+  @media screen and (max-width: $mediumMax) {
+    justify-content: center;
+  }
+  @media screen and (max-width: $smallMax) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: $baseMax) {
+    width: 100%;
   }
 }
 
@@ -15,4 +29,10 @@
   box-shadow: none;
   border-radius: $borderRadius;
   border: 2px solid $primaryLighterColor;
+  @media screen and (max-width: $smallMax) {
+    height: 66px;
+    width: 100%;
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
 }

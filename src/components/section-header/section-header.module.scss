@@ -5,10 +5,16 @@
   &.big {
     width: $column * 8 + $goutiere * 7;
     margin: 0 auto;
+    @media screen and (max-width: $mediumMax) {
+      width: 100%;
+    }
   }
   &.small {
     width: $column * 6 + $goutiere * 5;
     margin: 0 auto;
+    @media screen and (max-width: $mediumMax) {
+      width: 100%;
+    }
   }
   &.noPadding {
     padding-top: 0;
@@ -16,11 +22,24 @@
     .description {
       margin: 0 auto;
       width: $column * 6 + $goutiere * 5;
+      @media screen and (max-width: $mediumMax) {
+        width: 100%;
+      }
     }
   }
 
   &.padding {
     padding-top: 17vh;
+  }
+
+  @media screen and (max-width: $smallMax) {
+    padding: 10vh 0 0;
+    &.padding {
+      padding-top: 10vh;
+    }
+    &.noPadding {
+      padding-top: 0;
+    }
   }
 }
 
