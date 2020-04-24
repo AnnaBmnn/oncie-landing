@@ -9,15 +9,12 @@ import microphone from "../../images/microphone.svg"
 
 import heroStyles from "./hero.module.scss"
 
-const Hero = ({ siteTitle }) => (
+const Hero = ({ title, ctaTxt, placeHolderTxt }) => (
   <div className={heroStyles.hero}>
     <Section>
       <div className={heroStyles.container}>
-        <h1 className={heroStyles.title}>
-          L'application de live audio qui propulse votre voix dans une nouvelle
-          dimension
-        </h1>
-        <FomMailChimp />
+        <h1 className={heroStyles.title}>{title}</h1>
+        <FomMailChimp ctaTxt={ctaTxt} placeHolderTxt={placeHolderTxt} />
         <img
           className={heroStyles.img}
           src={microphone}
@@ -29,11 +26,11 @@ const Hero = ({ siteTitle }) => (
 )
 
 Hero.propTypes = {
-  siteTitle: PropTypes.string,
+  title: PropTypes.string,
 }
 
 Hero.defaultProps = {
-  siteTitle: ``,
+  title: ``,
 }
 
 export default Hero

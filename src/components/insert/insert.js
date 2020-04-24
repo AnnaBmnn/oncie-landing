@@ -7,13 +7,11 @@ import microphone from "../../images/microphone.svg"
 
 import insertStyles from "./insert.module.scss"
 
-const Insert = () => (
+const Insert = ({ title }) => (
   <Section>
     <div className={insertStyles.container}>
       <div className={insertStyles.insert}>
-        <h1 className={insertStyles.title}>
-          Oncie fait vibrer votre audience.
-        </h1>
+        <h1 className={insertStyles.title}>{title}</h1>
         <img
           className={insertStyles.img}
           src={microphone}

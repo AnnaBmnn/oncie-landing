@@ -5,7 +5,7 @@ import Button from "../button/button"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import formMailchimpStyles from "./form-mailchimp.module.scss"
 
-const FormMailchimp = ({ center }) => {
+const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
   const centerClass =
     center == "center"
       ? formMailchimpStyles.center
@@ -42,12 +42,12 @@ const FormMailchimp = ({ center }) => {
           className={formMailchimpStyles.formMailchimp__input}
           aria-label="Email address"
           onChange={event => setEmail(event.target.value)}
-          placeholder="Entrez votre email"
+          placeholder={placeHolderTxt}
           required
           type="email"
         />
         <div>
-          <Button>Accédez à la béta</Button>
+          <Button>{ctaTxt}</Button>
         </div>
       </form>
       <div>{message}</div>
