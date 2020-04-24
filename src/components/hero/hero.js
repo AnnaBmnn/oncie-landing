@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Cta from "../cta/cta"
+import FomMailChimp from "../form-mailchimp/form-mailchimp"
 import Section from "../section/section"
 // import MockupContent from "../image/image"
 
@@ -17,7 +17,7 @@ const Hero = ({ siteTitle }) => (
           L'application de live audio qui propulse votre voix dans une nouvelle
           dimension
         </h1>
-        <Cta />
+        <FomMailChimp />
         <img
           className={heroStyles.img}
           src={microphone}
