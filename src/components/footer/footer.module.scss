@@ -1,15 +1,44 @@
 @import "../../styles/constants.scss";
 
 .footer {
-  padding: 1rem;
-  background-color: $lightGray;
 }
 
-.footer__wrapper {
-  display: grid;
+.wrapper {
+  border-top: solid 2px #e4e3e8;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
-  padding: 1rem 2rem;
-  font-size: 0.85rem;
+}
+
+.footerLogo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footerSocials {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  // line-height: 32px;
+}
+
+.linksContainer {
+}
+
+.link {
+  color: #948fa3;
+  text-decoration: none;
+  margin-right: 32px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }

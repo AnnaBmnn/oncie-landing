@@ -10,11 +10,13 @@ const SectionHeader = ({
   description,
   width,
   padding,
+  titleType,
 }) => {
   const widthClass =
-    width == "big" ? sectionHeaderStyles.big : sectionHeaderStyles.small
+    width === "big" ? sectionHeaderStyles.big : sectionHeaderStyles.small
+  const titleClass = titleType === "title3" ? "title3" : "title2"
   const paddingClass =
-    padding == "noPadding"
+    padding === "noPadding"
       ? sectionHeaderStyles.noPadding
       : sectionHeaderStyles.padding
 
@@ -22,7 +24,7 @@ const SectionHeader = ({
     <header
       className={`${sectionHeaderStyles.sectionHeader} ${widthClass} ${paddingClass}`}
     >
-      <h2 className={`${sectionHeaderStyles.title} title2`}>
+      <h2 className={`${sectionHeaderStyles.title} ${titleClass}`}>
         {title}
         <span className={sectionHeaderStyles.titleHighlight}>
           {titleHighlight}

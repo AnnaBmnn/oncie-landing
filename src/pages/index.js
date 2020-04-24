@@ -50,6 +50,7 @@ const IndexPage = () => (
     <BlocPhone
       order="reverse"
       imgSrc={phoneBottom}
+      titleType="title3"
       title="Votre travail est précieux, il doit être rémunéré."
       description="Recherches, rédaction, interviews, animation, communication... La création de contenu audio de qualité est une activité complète et exigente. Votre contribution a une forte valeur ajoutée pour les auditeur.ice.s. C’est pourquoi, nous souhaitons que votre travail soit rémunéré."
     ></BlocPhone>

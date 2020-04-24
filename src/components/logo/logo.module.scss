@@ -1,11 +1,10 @@
 .logo {
-  position: fixed;
   z-index: 10;
-  mix-blend-mode: difference;
+  height: 45px;
 }
 .logo__img {
-  width: 130px;
-  height: auto;
+  width: auto;
+  height: 45px;
   transform: translateX(-3px);
 }
 

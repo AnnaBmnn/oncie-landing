@@ -8,7 +8,7 @@ const BlocImgTxt = ({ imgSrc, title, description }) => (
       <img src={imgSrc} alt="blocImgTxts" />
     </div>
     <div className={blocImgTxtStyles.txtContainer}>
-      <h3 className={`title3`}>{title}</h3>
+      <h3 className={`title4`}>{title}</h3>
       <div className={`description`}>{description}</div>
     </div>
   </div>
