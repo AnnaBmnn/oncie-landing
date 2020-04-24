@@ -31,5 +31,12 @@ module.exports = {
           "https://gmail.us4.list-manage.com/subscribe/post?u=339f393b8513e549e9278a6bc&amp;id=c43aac69db",
       },
     },
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
+        useLangKeyLayout: false,
+      },
+    },
   ],
 }

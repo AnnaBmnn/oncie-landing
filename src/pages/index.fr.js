@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { navigate } from "gatsby"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo/seo"
@@ -16,7 +17,7 @@ import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.svg"
 import phoneBottom from "../images/phone_bottom.svg"
 
-const IndexPage = () => (
+const IndexFrenchPage = () => (
   <Layout>
     <SEO />
     <Hero />
@@ -50,6 +51,7 @@ const IndexPage = () => (
     <BlocPhone
       order="reverse"
       imgSrc={phoneBottom}
+      titleType="title3"
       title="Votre travail est précieux, il doit être rémunéré."
       description="Recherches, rédaction, interviews, animation, communication... La création de contenu audio de qualité est une activité complète et exigente. Votre contribution a une forte valeur ajoutée pour les auditeur.ice.s. C’est pourquoi, nous souhaitons que votre travail soit rémunéré."
     ></BlocPhone>
@@ -65,4 +67,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default IndexFrenchPage
