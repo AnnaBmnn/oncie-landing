@@ -186,6 +186,11 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 img {
   max-width: 100%;

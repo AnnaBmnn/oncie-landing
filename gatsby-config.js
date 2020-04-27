@@ -38,5 +38,23 @@ module.exports = {
         useLangKeyLayout: false,
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /inline/,
+          //include: /\.inline\.svg$/,
+          options: {
+            tag: "svg",
+            name: "MyIcon",
+            props: {
+              className: "svg",
+              title: "svg",
+            },
+            filters: [value => console.log(value)],
+          },
+        },
+      },
+    },
   ],
 }

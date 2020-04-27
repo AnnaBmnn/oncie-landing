@@ -7,7 +7,7 @@
   line-height: 64px;
   @media screen and (max-width: $smallMax) {
     //medium
-    font-size: 40px;
+    font-size: 32px;
     line-height: 56px;
   }
 }
@@ -19,7 +19,7 @@
   line-height: 120%;
   @media screen and (max-width: $smallMax) {
     //medium
-    font-size: 48px;
+    font-size: 40px;
     line-height: 54px;
   }
 }
@@ -31,6 +31,7 @@
   line-height: 40px;
   margin-bottom: 32px;
   @media screen and (max-width: $smallMax) {
+    font-size: 24px;
     text-align: center;
   }
   @media screen and (max-width: $baseMax) {

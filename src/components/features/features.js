@@ -17,9 +17,24 @@ const Features = ({
 }) => {
   return (
     <div className={featuresStyles.features}>
-      <Feature imgSrc={img1} title={title1} description={description1} />
-      <Feature imgSrc={img2} title={title2} description={description2} />
-      <Feature imgSrc={img3} title={title3} description={description3} />
+      <Feature
+        imgSrc={img1}
+        title={title1}
+        description={description1}
+        colorType="orange"
+      />
+      <Feature
+        imgSrc={img2}
+        title={title2}
+        description={description2}
+        colorType="blue"
+      />
+      <Feature
+        imgSrc={img3}
+        title={title3}
+        description={description3}
+        colorType="green"
+      />
     </div>
   )
 }

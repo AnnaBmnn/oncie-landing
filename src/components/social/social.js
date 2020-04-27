@@ -5,10 +5,10 @@ import { Link } from "gatsby"
 import socialStyles from "./social.module.scss"
 
 const Social = ({ link, img, name }) => (
-  <Link className={socialStyles.social} to={link}>
+  <a className={socialStyles.social} href={link}>
     <img className={socialStyles.img} src={img} alt="logo réseau social"></img>
     <span className={socialStyles.name}>{name}</span>
-  </Link>
+  </a>
 )
 
 export default Social

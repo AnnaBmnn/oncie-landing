@@ -12,23 +12,40 @@ const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
       : formMailchimpStyles.noCenter
   const [email, setEmail] = useState()
   const [message, setMessage] = useState()
+  const [messageClass, setMessageClass] = useState()
+
+  const lang = window.location.pathname
+  const sendingMessage = lang === "/en" ? "Sending..." : "Envoie en cours..."
+  const successMessage =
+    lang === "/en"
+      ? "Let's go ! You are on the list"
+      : "C’est parti ! Vous êtes sur la liste"
+
+  const errorMessage =
+    lang === "/en"
+      ? "It's look like there is a problem with your subscription"
+      : "Il semblerait qu’il y ait un problème avec votre mail..."
+
+  const alreadySubscribeMessage =
+    lang === "/en"
+      ? "You are already on the list"
+      : "Vous êtes déjà sur la liste"
 
   const handleSubmit = async event => {
     event.preventDefault()
-    setMessage("Sending...")
+    setMessage(sendingMessage)
     const response = await addToMailchimp(email)
     if (response.result === "error") {
       if (response.msg.toLowerCase().includes("already subscribed")) {
-        setMessage("Vous êtes déjà sur la liste, merci!")
+        setMessage(alreadySubscribeMessage)
+        setMessageClass(formMailchimpStyles.alreadySubscribe)
       } else {
-        setMessage(
-          "Il y a eu des erreurs lors de votre inscription à la newsletter."
-        )
+        setMessage(errorMessage)
+        setMessageClass(formMailchimpStyles.error)
       }
     } else {
-      setMessage(
-        "Merci ! Vérifiez vos emails et cliquez sur le lien de confirmation."
-      )
+      setMessageClass(formMailchimpStyles.success)
+      setMessage(successMessage)
     }
   }
 
@@ -39,7 +56,7 @@ const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
         className={`${formMailchimpStyles.formMailchimp} ${centerClass}`}
       >
         <input
-          className={formMailchimpStyles.formMailchimp__input}
+          className={`${formMailchimpStyles.formMailchimp__input} `}
           aria-label="Email address"
           onChange={event => setEmail(event.target.value)}
           placeholder={placeHolderTxt}
@@ -50,7 +67,9 @@ const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
           <Button>{ctaTxt}</Button>
         </div>
       </form>
-      <div>{message}</div>
+      <div className={`${formMailchimpStyles.message} ${messageClass} `}>
+        {message}
+      </div>
     </div>
   )
 }

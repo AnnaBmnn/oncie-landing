@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15vh 0;
+  margin: 15vh 0 25vh;
   @media screen and (max-width: $smallMax) {
     margin: 10vh 0;
     flex-direction: column;
@@ -14,6 +14,7 @@
 
 .imgContainer {
   width: $column * 5 + $goutiere * 4;
+  position: relative;
   img {
     width: 100%;
     height: auto;
@@ -29,6 +30,43 @@
 
     margin-right: 0;
     margin-bottom: 50px;
+  }
+}
+
+.blocImgTxt {
+  .blop {
+    width: 170px;
+    top: -55px;
+    right: 5px;
+    position: absolute;
+  }
+  .bigCircle {
+    position: absolute;
+    bottom: -50px;
+    right: -60px;
+    background-color: $orange300;
+    height: 229px;
+    width: 229px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .smallCircle {
+    position: absolute;
+    right: 155px;
+    bottom: -70px;
+    background-color: $orange500;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+  }
+  svg {
+    position: absolute;
+    left: -58px;
+    top: -80px;
+    z-index: -1;
+  }
+  svg circle {
+    fill: $orange300;
   }
 }
 

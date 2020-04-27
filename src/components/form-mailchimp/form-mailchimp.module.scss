@@ -27,6 +27,8 @@
   padding: 0 1.5rem;
   font-weight: 600;
   box-shadow: none;
+  box-shadow: 0px 10px 20px rgba(112, 49, 255, 0.5);
+
   border-radius: $borderRadius;
   border: 2px solid $primaryLighterColor;
   @media screen and (max-width: $smallMax) {
@@ -35,4 +37,26 @@
     margin-bottom: 24px;
     margin-right: 0;
   }
+}
+
+.message {
+  color: $black;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 16px;
+}
+
+.alreadySubscribe {
+  background: #fed6b2;
+  border: 2px solid #fc9331;
+}
+
+.error {
+  background: #fdc4c4;
+  border: 2px solid #f85151;
+}
+
+.success {
+  background: #baf6d2;
+  border: 2px solid #34df78;
 }

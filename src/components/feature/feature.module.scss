@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   width: $column * 9 + $goutiere * 8;
-  margin-bottom: 15vh;
+  margin-bottom: 22vh;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     &:nth-of-type(2n) {
       align-self: center;
       .imgContainer {
@@ -48,7 +48,9 @@
 
 .imgContainer {
   width: $column * 4 + $goutiere * 3;
+  position: relative;
   img {
+    z-index: 2;
     width: 100%;
     height: auto;
   }
@@ -86,5 +88,83 @@
 .title {
   @media screen and (max-width: $smallMax) {
     text-align: left;
+  }
+}
+
+//deco
+.bigCircle {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.smallCircle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.orange {
+  .bigCircle {
+    right: -38px;
+    top: -51px;
+    background-color: $orange300;
+  }
+  .smallCircle {
+    left: 65px;
+    top: -51px;
+    background-color: $orange500;
+  }
+  svg {
+    position: absolute;
+    left: -35px;
+    bottom: -25px;
+    z-index: -1;
+  }
+  svg circle {
+    fill: $orange300;
+  }
+}
+.blue {
+  .bigCircle {
+    left: -40px;
+    top: -51px;
+    background-color: $lightBlue300;
+  }
+  .smallCircle {
+    left: 85px;
+    top: -75px;
+    background-color: $lightBlue500;
+  }
+  svg {
+    position: absolute;
+    right: -35px;
+    bottom: -25px;
+    z-index: -1;
+  }
+  svg circle {
+    fill: $lightBlue300;
+  }
+}
+.green {
+  .bigCircle {
+    left: -62px;
+    bottom: -44px;
+    background-color: $green300;
+  }
+  .smallCircle {
+    left: -43px;
+    top: 75px;
+    background-color: $green500;
+  }
+  svg {
+    position: absolute;
+    right: -35px;
+    top: -35px;
+    z-index: -1;
+  }
+  svg circle {
+    fill: $green300;
   }
 }

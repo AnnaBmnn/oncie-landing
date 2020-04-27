@@ -29,7 +29,7 @@ const Footer = ({ siteTitle }) => (
             Presse
           </Link>
         </div>
-        <div class={footerStyles.footerSocials}>
+        <div className={footerStyles.footerSocials}>
           <span>Suivez-nous : </span>
           <Socials colorType="color"></Socials>
         </div>

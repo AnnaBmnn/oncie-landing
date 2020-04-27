@@ -34,7 +34,7 @@ const IndexFrenchPage = () => (
       />
       <BlocImgText
         imgSrc={img}
-        title="C'est à votre tour de prendre l'antenne"
+        title="Replacez l’interaction au coeur de votre contenu"
         description="Vous qui partagez vos passions, racontez des histoires, critiquez l’actualité, parlez de société, commentez le sport... Prenez l’antenne et offrez à votre communauté un show unique et interactif. "
       />
     </Section>
