@@ -14,20 +14,20 @@ const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
   const [message, setMessage] = useState()
   const [messageClass, setMessageClass] = useState()
 
-  const lang = window.location.pathname
-  const sendingMessage = lang === "/en" ? "Sending..." : "Envoie en cours..."
+  const lang = ctaTxt === "Get early access" ? "en" : "fr"
+  const sendingMessage = lang === "en" ? "Sending..." : "Envoie en cours..."
   const successMessage =
-    lang === "/en"
+    lang === "en"
       ? "Let's go ! You are on the list"
       : "C’est parti ! Vous êtes sur la liste"
 
   const errorMessage =
-    lang === "/en"
+    lang === "en"
       ? "It's look like there is a problem with your subscription"
       : "Il semblerait qu’il y ait un problème avec votre mail..."
 
   const alreadySubscribeMessage =
-    lang === "/en"
+    lang === "en"
       ? "You are already on the list"
       : "Vous êtes déjà sur la liste"
 
