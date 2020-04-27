@@ -32,6 +32,8 @@
   margin-bottom: 32px;
   @media screen and (max-width: $smallMax) {
     font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
     text-align: center;
   }
   @media screen and (max-width: $baseMax) {

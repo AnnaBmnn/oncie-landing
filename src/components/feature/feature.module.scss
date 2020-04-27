@@ -43,6 +43,21 @@
     &:nth-of-type(2n + 1) {
       align-self: center;
     }
+    &:nth-of-type(3n + 1) {
+      .imgContainer {
+        align-self: center;
+      }
+    }
+    &:nth-of-type(3n + 2) {
+      .imgContainer {
+        align-self: flex-start;
+      }
+    }
+    &:nth-of-type(3n) {
+      .imgContainer {
+        align-self: flex-end;
+      }
+    }
   }
 }
 
@@ -60,10 +75,10 @@
   }
   @media screen and (max-width: $smallMax) {
     width: $column * 3 + $goutiere * 3;
-    margin-bottom: 40px;
+    margin: 0 0 40px;
   }
   @media screen and (max-width: $baseMax) {
-    margin: 0 auto 30px;
+    margin: 0 0 30px;
     width: 95%;
     margin-bottom: 30px;
   }
@@ -110,17 +125,29 @@
     right: -38px;
     top: -51px;
     background-color: $orange300;
+    @media screen and (max-width: $baseMax) {
+      right: -19px;
+      top: -41px;
+    }
   }
   .smallCircle {
     left: 65px;
     top: -51px;
     background-color: $orange500;
+    @media screen and (max-width: $baseMax) {
+      left: 55px;
+      top: -41px;
+    }
   }
   svg {
     position: absolute;
     left: -35px;
     bottom: -25px;
     z-index: -1;
+    @media screen and (max-width: $baseMax) {
+      left: -23px;
+      bottom: -15px;
+    }
   }
   svg circle {
     fill: $orange300;
@@ -130,7 +157,13 @@
   .bigCircle {
     left: -40px;
     top: -51px;
+    width: 114px;
+    height: 114px;
     background-color: $lightBlue300;
+    @media screen and (max-width: $baseMax) {
+      left: -15px;
+      top: -41px;
+    }
   }
   .smallCircle {
     left: 85px;
@@ -142,6 +175,9 @@
     right: -35px;
     bottom: -25px;
     z-index: -1;
+    @media screen and (max-width: $baseMax) {
+      right: -10px;
+    }
   }
   svg circle {
     fill: $lightBlue300;
@@ -152,17 +188,26 @@
     left: -62px;
     bottom: -44px;
     background-color: $green300;
+    @media screen and (max-width: $baseMax) {
+      left: -25px;
+    }
   }
   .smallCircle {
     left: -43px;
     top: 75px;
     background-color: $green500;
+    @media screen and (max-width: $baseMax) {
+      left: -34px;
+    }
   }
   svg {
     position: absolute;
     right: -35px;
     top: -35px;
     z-index: -1;
+    @media screen and (max-width: $baseMax) {
+      right: -16px;
+    }
   }
   svg circle {
     fill: $green300;
