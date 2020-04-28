@@ -9,29 +9,67 @@ import LogoWhite from "../../images/logo.svg"
 
 import headerStyles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => (
-  <header className={headerStyles.header}>
-    <div className={headerStyles.container}>
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        <Logo colorStyle="white" />
-      </Link>
-      <Socials></Socials>
-    </div>
-  </header>
-)
+export default class Header extends React.Component {
+  state = { x: 0, y: 0, heroHeight: 0, color: "white" }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll)
+  }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll)
+  // }
+
+  handleScroll = ev => {
+    const heroHeight = document.querySelector(".js-hero").clientHeight
+    if (heroHeight !== this.state.heroHeight) {
+      this.setState({
+        heroHeight,
+      })
+    }
+
+    // console.log(window.innerHeight)
+    // console.log(this.state.y)
+    this.setState({
+      x: window.scrollX,
+      y: window.scrollY,
+    })
+    if (
+      this.state.y > this.state.heroHeight - 100 &&
+      this.state.color === "white"
+    ) {
+      this.setState({
+        color: "color",
+      })
+    }
+    if (
+      this.state.y < this.state.heroHeight - 100 &&
+      this.state.color === "color"
+    ) {
+      this.setState({
+        color: "white",
+      })
+    }
+  }
+
+  render() {
+    return (
+      <header className={`${headerStyles.header} js-header`}>
+        <div className={headerStyles.container}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            <Logo colorStyle={this.state.color} />
+          </Link>
+          <Socials colorType={this.state.color}></Socials>
+        </div>
+      </header>
+    )
+  }
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+// export default Header

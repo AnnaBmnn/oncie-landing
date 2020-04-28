@@ -13,7 +13,7 @@ const Footer = ({ cookieTxt, legalsTxt, presseTxt, followTxt }) => (
   <footer className={footerStyles.footer}>
     <Section>
       <div className={footerStyles.wrapper}>
-        <div class={footerStyles.footerLogo}>
+        <div className={footerStyles.footerLogo}>
           <Logo colorStyle="color" />
         </div>
         <div className={footerStyles.linksContainer}>
