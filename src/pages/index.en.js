@@ -13,8 +13,8 @@ import Insert from "../components/insert/insert"
 import CallToAction from "../components/cta/cta"
 
 import img from "../images/antenne.png"
-import phoneTop from "../images/phone_top.svg"
-import phoneBottom from "../images/phone_bottom.svg"
+import phoneTop from "../images/phone_top.png"
+import phoneBottom from "../images/phone_bottom.png"
 
 const IndexEnglishPage = () => (
   <Layout>

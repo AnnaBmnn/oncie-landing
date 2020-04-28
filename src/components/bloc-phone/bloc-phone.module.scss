@@ -2,6 +2,7 @@
 
 .blocPhone {
   background-color: $purple200;
+  overflow-y: hidden;
 }
 
 .container {
@@ -20,7 +21,61 @@
   }
 }
 
-.img {
-  transform: translateX(-17px);
+.imgContainer {
+  position: relative;
+  transform: translate(-17px, 10px);
   width: $column * 4 + $goutiere * 3;
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: $baseMax) {
+    width: 96%;
+  }
+}
+
+.noReverse {
+  .blop01 {
+    position: absolute;
+    left: -70px;
+    bottom: 5px;
+    // width: 163px;
+    // height: 113px;
+    @media screen and (max-width: $baseMax) {
+      width: 125px;
+      height: auto;
+      left: -20px;
+    }
+  }
+  .blop02 {
+    position: absolute;
+    right: -25px;
+    top: 100px;
+    width: 201px;
+    height: 205px;
+    @media screen and (max-width: $baseMax) {
+      width: 155px;
+      height: auto;
+      right: -10px;
+      top: 50px;
+    }
+  }
+  svg {
+    position: absolute;
+    z-index: -2;
+
+    circle {
+      fill: $purple400;
+    }
+  }
+  .bigCircle {
+    position: absolute;
+    width: 236.37px;
+    height: 236.37px;
+    right: -55px;
+    bottom: -50px;
+    z-index: -2;
+    border-radius: 50%;
+    background: $purple300;
+  }
 }
