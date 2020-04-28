@@ -43,7 +43,7 @@
 .img {
   position: absolute;
   right: 0;
-  bottom: -0;
+  bottom: -1px;
   height: 95vh;
   width: auto;
   @media screen and (max-width: $mediumMax) {

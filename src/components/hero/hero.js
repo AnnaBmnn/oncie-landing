@@ -5,7 +5,7 @@ import FomMailChimp from "../form-mailchimp/form-mailchimp"
 import Section from "../section/section"
 // import MockupContent from "../image/image"
 
-import microphone from "../../images/microphone.svg"
+import microphone from "../../images/microphone.png"
 
 import heroStyles from "./hero.module.scss"
 

@@ -3,7 +3,7 @@ import React from "react"
 import Section from "../section/section"
 // import MockupContent from "../image/image"
 
-import microphone from "../../images/microphone.svg"
+import microphone from "../../images/microphone.png"
 
 import insertStyles from "./insert.module.scss"
 

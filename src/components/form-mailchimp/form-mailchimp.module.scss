@@ -2,6 +2,7 @@
 .wrapper {
   @media screen and (max-width: $baseMax) {
     width: 100%;
+    text-align: center;
   }
 }
 .formMailchimp {
@@ -13,11 +14,13 @@
     justify-content: center;
   }
   @media screen and (max-width: $smallMax) {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    // align-items: center;
   }
   @media screen and (max-width: $baseMax) {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -32,9 +35,14 @@
   border-radius: $borderRadius;
   border: 2px solid $primaryLighterColor;
   @media screen and (max-width: $smallMax) {
-    height: 66px;
-    width: 100%;
+    height: auto;
+    width: 4 * $column + $goutiere * 3;
+    padding: 0.8rem 1.1rem 0.92rem;
     margin-bottom: 24px;
+    margin-right: $goutiere;
+  }
+  @media screen and (max-width: $baseMax) {
+    width: 100%;
     margin-right: 0;
   }
 }

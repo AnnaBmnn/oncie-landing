@@ -2,6 +2,7 @@ import React from "react"
 
 import featuresStyles from "./features.module.scss"
 import Feature from "../feature/feature"
+import Line from "../line/line"
 
 import img1 from "../../images/feature_1.png"
 import img2 from "../../images/feature_2.png"

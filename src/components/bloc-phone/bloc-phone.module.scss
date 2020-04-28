@@ -23,18 +23,26 @@
 
 .imgContainer {
   position: relative;
-  transform: translate(-17px, 10px);
-  width: $column * 4 + $goutiere * 3;
+  transform: translate(-24px, 10px);
+  width: 516px;
+  // width: $column * 4 + $goutiere * 3;
   .img {
     width: 100%;
     height: auto;
   }
   @media screen and (max-width: $baseMax) {
     width: 96%;
+    transform: translate(-4%, 10px);
   }
 }
 
 .noReverse {
+  .imgContainer {
+    transform: translate(-24px, 10px);
+    @media screen and (max-width: $baseMax) {
+      transform: translate(-4%, 10px);
+    }
+  }
   .blop01 {
     position: absolute;
     left: -70px;
@@ -77,5 +85,48 @@
     z-index: -2;
     border-radius: 50%;
     background: $purple300;
+  }
+}
+
+.reverse {
+  .imgContainer {
+    transform: translate(-24px, 0px);
+    @media screen and (max-width: $baseMax) {
+      transform: translate(-4%, 0px);
+    }
+  }
+  svg,
+  .blop01 {
+    display: none;
+  }
+  .blop02 {
+    position: absolute;
+    left: -25px;
+    top: -4px;
+    width: auto;
+    height: 180px;
+    @media screen and (max-width: $baseMax) {
+      width: 128px;
+      height: auto;
+      left: -14px;
+      top: 4px;
+    }
+  }
+  .bigCircle {
+    position: absolute;
+    width: 236.37px;
+    height: 236.37px;
+    right: -55px;
+    top: -130px;
+    z-index: -2;
+    border-radius: 50%;
+    background: $purple300;
+
+    @media screen and (max-width: $baseMax) {
+      width: 200px;
+      height: 200px;
+      right: -23px;
+      top: -113px;
+    }
   }
 }

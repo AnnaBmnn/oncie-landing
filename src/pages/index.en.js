@@ -11,6 +11,7 @@ import BlocPhone from "../components/bloc-phone/bloc-phone"
 import Features from "../components/features/features"
 import Insert from "../components/insert/insert"
 import CallToAction from "../components/cta/cta"
+import Line from "../components/line/line"
 
 import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
@@ -45,6 +46,7 @@ const IndexEnglishPage = () => (
       description="Simply start your live streaming...."
     ></BlocPhone>
     <Section>
+      <Line isReverse={false} />
       <SectionHeader
         width="small"
         title="Ready, set, go! You're on air"
@@ -59,6 +61,7 @@ const IndexEnglishPage = () => (
         title3="The freedom to make it your own"
         description3="Customize and give character to your shows by adding jingles and music.  Get access to your shows data (number of listeners, interactions) to understand your audience and optimize the impact of your interventions."
       ></Features>
+      <Line isReverse={true} />
     </Section>
 
     <BlocPhone

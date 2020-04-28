@@ -11,6 +11,7 @@ import BlocPhone from "../components/bloc-phone/bloc-phone"
 import Features from "../components/features/features"
 import Insert from "../components/insert/insert"
 import CallToAction from "../components/cta/cta"
+import Line from "../components/line/line"
 
 import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
@@ -44,6 +45,7 @@ const IndexFrenchPage = () => (
       description="Démarrez simplement votre diffusion audio...."
     ></BlocPhone>
     <Section>
+      <Line isReverse={false} />
       <SectionHeader
         width="small"
         title="C'est partie, vous êtes en live"
@@ -57,6 +59,7 @@ const IndexFrenchPage = () => (
         title3="Libre à vous de cultiver un univers qui vous ressemble"
         description3="Personnalisez et caractérisez vos émissions en ajoutant jingles et bandes son. Accédez aux données relatives à votre activité (nombre d’écoutes, interactions) pour comprendre votre audimat et optimiser l’impact de vos interventions."
       ></Features>
+      <Line isReverse={true} />
     </Section>
 
     <BlocPhone
