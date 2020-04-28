@@ -12,6 +12,7 @@ import Features from "../components/features/features"
 import Insert from "../components/insert/insert"
 import CallToAction from "../components/cta/cta"
 import Line from "../components/line/line"
+import Footer from "../components/footer/footer"
 
 import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
@@ -26,7 +27,6 @@ const IndexEnglishPage = () => (
       ctaTxt="Get early access"
       title="The live audio app that pushes your voice to a new dimension"
     />
-
     <Section>
       <SectionHeader
         width="big"
@@ -63,7 +63,6 @@ const IndexEnglishPage = () => (
       ></Features>
       <Line isReverse={true} />
     </Section>
-
     <BlocPhone
       order="reverse"
       imgSrc={phoneBottom}
@@ -82,6 +81,12 @@ const IndexEnglishPage = () => (
         ctaTxt="Get early access"
       ></CallToAction>
     </Section>
+    <Footer
+      legalsTxt="Legal notices"
+      cookieTxt="Cookies"
+      presseTxt="Media"
+      followTxt="Follow us"
+    />
   </Layout>
 )
 

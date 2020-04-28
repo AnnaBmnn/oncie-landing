@@ -12,6 +12,7 @@ import Features from "../components/features/features"
 import Insert from "../components/insert/insert"
 import CallToAction from "../components/cta/cta"
 import Line from "../components/line/line"
+import Footer from "../components/footer/footer"
 
 import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
@@ -61,7 +62,6 @@ const IndexFrenchPage = () => (
       ></Features>
       <Line isReverse={true} />
     </Section>
-
     <BlocPhone
       order="reverse"
       imgSrc={phoneBottom}
@@ -80,6 +80,12 @@ const IndexFrenchPage = () => (
         ctaTxt="Accédez à la béta"
       ></CallToAction>
     </Section>
+    <Footer
+      legalsTxt="Mentions légales"
+      cookieTxt="Cookies"
+      presseTxt="Presse"
+      followTxt="Suivez-nous"
+    />
   </Layout>
 )
 

@@ -7,11 +7,9 @@ import { Link } from "gatsby"
 import Socials from "../socials/socials"
 import Section from "../section/section"
 
-import { COLORS } from "../../styles/constants"
-
 import footerStyles from "./footer.module.scss"
 
-const Footer = ({ siteTitle }) => (
+const Footer = ({ cookieTxt, legalsTxt, presseTxt, followTxt }) => (
   <footer className={footerStyles.footer}>
     <Section>
       <div className={footerStyles.wrapper}>
@@ -20,17 +18,17 @@ const Footer = ({ siteTitle }) => (
         </div>
         <div className={footerStyles.linksContainer}>
           <Link className={footerStyles.link} to="/cookies">
-            Cookies
+            {cookieTxt}
           </Link>
           <Link className={footerStyles.link} to="/mentions-legales">
-            Mentions légales
+            {legalsTxt}
           </Link>
           <Link className={footerStyles.link} to="/presse">
-            Presse
+            {presseTxt}
           </Link>
         </div>
         <div className={footerStyles.footerSocials}>
-          <span>Suivez-nous : </span>
+          <span>{followTxt}</span>
           <Socials colorType="color"></Socials>
         </div>
       </div>
