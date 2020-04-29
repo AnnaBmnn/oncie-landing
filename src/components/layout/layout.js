@@ -8,32 +8,35 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import CookieConsent from "react-cookie-consent"
 
 import "../../styles/typographie.scss"
 import "../../styles/constants.scss"
 import "../../styles/default.scss"
 import "../../styles/commun.scss"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
+const Layout = ({ children }) => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery {
+          site {
+            siteMetadata {
+              title
+            }
           }
         }
-      }
-    `}
-    render={data => (
-      <>
-        <div>
-          <main>{children}</main>
-        </div>
-      </>
-    )}
-  />
-)
+      `}
+      render={data => (
+        <>
+          <div>
+            <main>{children}</main>
+          </div>
+        </>
+      )}
+    />
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

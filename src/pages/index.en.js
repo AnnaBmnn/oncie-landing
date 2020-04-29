@@ -13,6 +13,7 @@ import Insert from "../components/insert/insert"
 import CallToAction from "../components/cta/cta"
 import Line from "../components/line/line"
 import Footer from "../components/footer/footer"
+import CookieConsent from "react-cookie-consent"
 
 import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
@@ -87,6 +88,39 @@ const IndexEnglishPage = () => (
       presseTxt="Media"
       followTxt="Follow us"
     />
+    <CookieConsent
+      enableDeclineButton
+      location="bottom"
+      buttonText="Accept"
+      declineButtonText="Decline"
+      cookieName="gatsby-gdpr-google-analytics"
+      style={{
+        background: "#f3effe",
+        color: "#0a011f",
+        padding: "2px 10px 2px",
+      }}
+      contentStyle={{ margin: "20px 15px", fontSize: "15px" }}
+      buttonStyle={{
+        color: "#fbfbfd",
+        background: "#7038fa",
+        borderRadius: "8px",
+        border: "2px solid #d2c1fd",
+        fontSize: "13px",
+        margin: "0px 15px",
+        padding: "4px 18px 7px",
+      }}
+      declineButtonStyle={{
+        color: "#0a011f",
+        background: "#e3d8fe",
+        borderRadius: "8px",
+        border: "2px solid #d2c1fd",
+        fontSize: "13px",
+        margin: "0px ",
+        padding: "4px 18px 7px",
+      }}
+    >
+      This website uses cookies to improve your experience.
+    </CookieConsent>
   </Layout>
 )
 
