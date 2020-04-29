@@ -63,3 +63,17 @@ $goutiere: 32px;
 
 // //base
 // //$containe: 414px;
+
+// keyframes
+
+@mixin animation-mixin($name, $duration, $delay) {
+  @keyframes #{$name} {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  animation: #{$name} #{$duration} #{$delay} infinite;
+}
