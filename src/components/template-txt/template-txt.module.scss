@@ -1,9 +1,0 @@
-@import "../../styles/constants.scss";
-// @import "../../styles/commun.scss";
-
-.container {
-  padding: 28vh 0 15vh 0;
-  @media screen and (max-width: $smallMax) {
-    padding: 20vh 0 4vh;
-  }
-}

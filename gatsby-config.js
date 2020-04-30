@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Oncie, the live audio app`,
-    description: `Oncie is a live audio app that enables podcasters to interact with their communities through a new live audio experience`,
-    author: `Oncie`,
-    siteUrl: `https://oncie.netlify.app`,
+    title: `Oncie `,
+    description: `Oncie is the best audio live experience`,
+    author: `Oncie team`,
+    siteUrl: `https://gatsby-starter-landing-page.netlify.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

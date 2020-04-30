@@ -19,17 +19,17 @@ import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
 import phoneBottom from "../images/phone_bottom.png"
 
-const IndexFrenchPage = ({ location }) => {
+const IndexFrenchPage = () => {
   return (
     <Layout>
       <SEO />
-      <Header color="white" />
+      <Header />
       <Hero
-        lang={location.pathname}
         placeHolderTxt="Entrez votre email"
-        ctaTxt="Accéde à la béta"
+        ctaTxt="Accédez à la béta"
         title="L'application de live audio qui propulse votre voix dans une nouvelle dimension"
       />
+
       <Section>
         <SectionHeader
           width="big"
@@ -80,13 +80,12 @@ const IndexFrenchPage = ({ location }) => {
         <CallToAction
           placeHolderTxt="Entrez votre email"
           ctaTxt="Accédez à la béta"
-          lang={location.pathname}
         ></CallToAction>
       </Section>
       <Footer
-        urlLang={location.pathname}
         legalsTxt="Mentions légales"
         cookieTxt="Cookies"
+        presseTxt="Presse"
         followTxt="Suivez-nous"
       />
       <CookieConsent

@@ -9,16 +9,12 @@ import microphone from "../../images/microphone.png"
 
 import heroStyles from "./hero.module.scss"
 
-const Hero = ({ lang, title, ctaTxt, placeHolderTxt }) => (
+const Hero = ({ title, ctaTxt, placeHolderTxt }) => (
   <div className={`${heroStyles.hero} js-hero`}>
     <Section>
       <div className={heroStyles.container}>
         <h1 className={heroStyles.title}>{title}</h1>
-        <FomMailChimp
-          lang={lang}
-          ctaTxt={ctaTxt}
-          placeHolderTxt={placeHolderTxt}
-        />
+        <FomMailChimp ctaTxt={ctaTxt} placeHolderTxt={placeHolderTxt} />
         <img
           className={heroStyles.img}
           src={microphone}

@@ -10,45 +10,45 @@ import LogoWhite from "../../images/logo.svg"
 import headerStyles from "./header.module.scss"
 
 export default class Header extends React.Component {
-  state = { x: 0, y: 0, heroHeight: 0, color: this.props.color }
+  state = { x: 0, y: 0, heroHeight: 0, color: "white" }
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
   }
 
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleScroll)
+  // }
+
   handleScroll = ev => {
-    const heroHeightDom = document.querySelector(".js-hero")
-    if (heroHeightDom) {
-      const heroHeight = document.querySelector(".js-hero").clientHeight
-
-      if (heroHeight !== this.state.heroHeight) {
-        this.setState({
-          heroHeight,
-        })
-      }
-
-      // console.log(window.innerHeight)
-      // console.log(this.state.y)
+    const heroHeight = document.querySelector(".js-hero").clientHeight
+    if (heroHeight !== this.state.heroHeight) {
       this.setState({
-        x: window.scrollX,
-        y: window.scrollY,
+        heroHeight,
       })
-      if (
-        this.state.y > this.state.heroHeight - 100 &&
-        this.state.color === "white"
-      ) {
-        this.setState({
-          color: "color",
-        })
-      }
-      if (
-        this.state.y < this.state.heroHeight - 100 &&
-        this.state.color === "color"
-      ) {
-        this.setState({
-          color: "white",
-        })
-      }
+    }
+
+    // console.log(window.innerHeight)
+    // console.log(this.state.y)
+    this.setState({
+      x: window.scrollX,
+      y: window.scrollY,
+    })
+    if (
+      this.state.y > this.state.heroHeight - 100 &&
+      this.state.color === "white"
+    ) {
+      this.setState({
+        color: "color",
+      })
+    }
+    if (
+      this.state.y < this.state.heroHeight - 100 &&
+      this.state.color === "color"
+    ) {
+      this.setState({
+        color: "white",
+      })
     }
   }
 

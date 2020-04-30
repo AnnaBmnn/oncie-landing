@@ -19,12 +19,11 @@ import img from "../images/antenne.png"
 import phoneTop from "../images/phone_top.png"
 import phoneBottom from "../images/phone_bottom.png"
 
-const IndexEnglishPage = ({ location }) => (
+const IndexEnglishPage = () => (
   <Layout>
     <SEO />
-    <Header color="white" />
+    <Header />
     <Hero
-      lang={location.pathname}
       placeHolderTxt="Enter your email"
       ctaTxt="Get early access"
       title="The live audio app that pushes your voice to a new dimension"
@@ -79,15 +78,14 @@ const IndexEnglishPage = ({ location }) => (
         description="Be amongst the firsts to discover Oncie before the official release."
       />
       <CallToAction
-        lang={location.pathname}
         placeHolderTxt="Enter your email"
         ctaTxt="Get early access"
       ></CallToAction>
     </Section>
     <Footer
-      urlLang={location.pathname}
       legalsTxt="Legal notices"
       cookieTxt="Cookies"
+      presseTxt="Media"
       followTxt="Follow us"
     />
     <CookieConsent
