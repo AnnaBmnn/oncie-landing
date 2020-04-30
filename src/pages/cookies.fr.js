@@ -9,23 +9,6 @@ import Footer from "../components/footer/footer"
 import CookieConsent from "react-cookie-consent"
 import Button from "../components/button/button"
 
-const getRedirectLanguage = () => {
-  if (typeof navigator === `undefined`) {
-    return "en"
-  }
-
-  const lang =
-    navigator && navigator.language && navigator.language.split("-")[0]
-  if (!lang) return "en"
-
-  switch (lang) {
-    case "fr":
-      return "fr"
-    default:
-      return "en"
-  }
-}
-
 const CookiesFrenchPage = ({ location }) => {
   return (
     <Layout>
@@ -93,11 +76,7 @@ const CookiesFrenchPage = ({ location }) => {
         </p>
       </TemplateTxt>
       <Footer
-        urlLang={
-          location.state.langUrl
-            ? location.state.langUrl
-            : getRedirectLanguage()
-        }
+        urlLang={location.state.langUrl ? location.state.langUrl : ""}
         legalsTxt="Mentions légales"
         cookieTxt="Cookies"
         followTxt="Suivez-nous"
