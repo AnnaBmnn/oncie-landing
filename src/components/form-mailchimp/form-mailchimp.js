@@ -5,7 +5,7 @@ import Button from "../button/button"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 import formMailchimpStyles from "./form-mailchimp.module.scss"
 
-const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
+const FormMailchimp = ({ lang, center, ctaTxt, placeHolderTxt }) => {
   const centerClass =
     center == "center"
       ? formMailchimpStyles.center
@@ -14,20 +14,19 @@ const FormMailchimp = ({ center, ctaTxt, placeHolderTxt }) => {
   const [message, setMessage] = useState()
   const [messageClass, setMessageClass] = useState()
 
-  const lang = ctaTxt === "Get early access" ? "en" : "fr"
-  const sendingMessage = lang === "en" ? "Sending..." : "Envoie en cours..."
+  const sendingMessage = lang === "/en" ? "Sending..." : "Envoie en cours..."
   const successMessage =
-    lang === "en"
+    lang === "/en"
       ? "Let's go ! You are on the list"
       : "C’est parti ! Vous êtes sur la liste"
 
   const errorMessage =
-    lang === "en"
-      ? "It's look like there is a problem with your subscription"
+    lang === "/en"
+      ? "It looks like there is a problem with your emai"
       : "Il semblerait qu’il y ait un problème avec votre mail..."
 
   const alreadySubscribeMessage =
-    lang === "en"
+    lang === "/en"
       ? "You are already on the list"
       : "Vous êtes déjà sur la liste"
 

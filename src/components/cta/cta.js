@@ -5,9 +5,10 @@ import SectionHeader from "../section-header/section-header"
 
 import ctaStyles from "./cta.module.scss"
 
-const CallToAction = ({ placeHolderTxt, ctaTxt }) => (
+const CallToAction = ({ lang, placeHolderTxt, ctaTxt }) => (
   <div className={ctaStyles.cta}>
     <FomMailChimp
+      lang={lang}
       center="center"
       ctaTxt={ctaTxt}
       placeHolderTxt={placeHolderTxt}
