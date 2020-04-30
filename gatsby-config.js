@@ -8,9 +8,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        icon: `src/images/favicon.png`,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
