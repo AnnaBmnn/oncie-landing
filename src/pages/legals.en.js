@@ -59,7 +59,7 @@ const LegalsEnglishPage = ({ location }) => {
         </p>
       </TemplateTxt>
       <Footer
-        urlLang={location.state.langUrl ? location.state.langUrl : ""}
+        urlLang={location.state ? location.state.langUrl : ""}
         legalsTxt="Legal notices"
         cookieTxt="Cookies"
         followTxt="Follow us"

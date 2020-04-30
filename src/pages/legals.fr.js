@@ -64,7 +64,7 @@ const LegalsFrenchPage = ({ location }) => {
         legalsTxt="Mentions légales"
         cookieTxt="Cookies"
         followTxt="Suivez-nous"
-        urlLang={location.state.langUrl ? location.state.langUrl : ""}
+        urlLang={location.state ? location.state.langUrl : ""}
       />
       <CookieConsent
         enableDeclineButton
