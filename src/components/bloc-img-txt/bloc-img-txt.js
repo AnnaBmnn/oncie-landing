@@ -15,7 +15,14 @@ const BlocImgTxt = ({ imgSrc, title, description }) => (
     </div>
     <div className={blocImgTxtStyles.txtContainer}>
       <h3 className={`title4`}>{title}</h3>
-      <div className={`description`}>{description}</div>
+      <div
+        className={`description`}
+        data-sal="slide-down"
+        data-sal-delay="300"
+        data-sal-easing="ease"
+      >
+        {description}
+      </div>
     </div>
   </div>
 )

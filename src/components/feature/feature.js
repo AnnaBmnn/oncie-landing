@@ -22,7 +22,12 @@ const Feature = ({ imgSrc, title, description, colorType }) => {
       </div>
       <div className={featureStyles.txtContainer}>
         <h3 className={`title4 ${featureStyles.title}`}>{title}</h3>
-        <div className={`description`}>{description}</div>
+        <div
+          data-sal="slide-down"
+          className={`description ${featureStyles.description}`}
+        >
+          {description}
+        </div>
       </div>
     </div>
   )

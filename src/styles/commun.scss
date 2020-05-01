@@ -100,3 +100,11 @@
     width: 414px;
   }
 }
+
+.description {
+  transition: opacity 0.5s ease-in-out, transform 0.3s 0s ease-in-out !important;
+}
+
+.sal-animate {
+  opacity: 1;
+}
