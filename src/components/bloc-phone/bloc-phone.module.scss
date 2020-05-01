@@ -89,6 +89,10 @@
 }
 
 .reverse {
+  .title {
+    font-size: 64px;
+    line-height: 120%;
+  }
   .imgContainer {
     transform: translate(-24px, 0px);
     @media screen and (max-width: $baseMax) {

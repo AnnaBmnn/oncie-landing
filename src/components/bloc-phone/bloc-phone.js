@@ -9,10 +9,11 @@ import Blop02 from "../../images/blop_02_Purple.png"
 
 import blocPhoneStyles from "./bloc-phone.module.scss"
 
-const BlocPhone = ({ title, description, imgSrc, order, titleType }) => {
+const BlocPhone = ({ title, description, imgSrc, order }) => {
   const orderClass =
     order === "reverse" ? blocPhoneStyles.reverse : blocPhoneStyles.noReverse
   const padding = order === "reverse" ? "noPadding" : "padding"
+  const titleType = order === "reverse" ? "title3" : "title2"
   return (
     <div className={blocPhoneStyles.blocPhone}>
       <Section>
