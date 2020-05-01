@@ -16,46 +16,44 @@ const LegalsEnglishPage = ({ location }) => {
       <Header color="color" />
       <TemplateTxt>
         <Link to={`/`}>
-          <Button>Retourner à la page d'accueil</Button>
+          <Button>Back to homepage</Button>
         </Link>
-        <h1 className="title2 title2--margin">EN Mentions légales</h1>
-        <h2 className="title4 title4--margin ">Éditeur du site internet</h2>
+        <h1 className="title2 title2--margin">Legal Notice</h1>
+        <h2 className="title4 title4--margin ">Website editor</h2>
         <p>
-          L’édition et la direction de la publication du site oncie.live est
-          assurée par Lesouef Félix, domicilié au 223 rue de paris.<br></br>{" "}
-          Numéro de téléphone : 0602289430. <br></br> Adresse e-mail
+          Editing and publication management of the oncie.live site is provided
+          by Lesouef Félix, domiciled at 223 rue de paris. <br></br>
+          Phone number : 0602289430. <br></br> E-mail address
           oncie.live@gmail.com.
         </p>
-        <h2 className="title4 title4--margin ">Hébergeur du site internet</h2>
+        <h2 className="title4 title4--margin ">Website host</h2>
         <p>
-          L'hébergeur du site oncie.live est la société netlify, dont le siège
-          social est situé à 610 22nd Street Suite 315 San Francisco, CA 94107
-          United States, avec le numéro de téléphone : 844-899-7312.
+          The host of the oncie.live site is the company netlify, whose head
+          office is located at 610 22nd Street Suite 315 San Francisco, CA 94107
+          United States, with the telephone number: 844-899-7312.
         </p>
-        <h2 className="title4 title4--margin ">
-          Déclaration relative aux cookies
-        </h2>
+        <h2 className="title4 title4--margin ">Cookie statement</h2>
         <p>
-          L'hébergeur du site oncie.live est la société netlify, dont le siège
-          social est situé à 610 22nd Street Suite 315 San Francisco, CA 94107
-          United States, avec le numéro de téléphone : 844-899-7312.
+          By using the Oncie.live website, you agree to our placing cookies on
+          your device, as described in our Privacy Policy and in this
+          Declaration.
         </p>
         <p>
-          L'utilisateur dispose d'un droit d'accès, de retrait et de
-          modification des données à caractère personnel communiquées par le
-          biais des cookies dans les conditions indiquées ci-dessus.
+          The user has a right of access, withdrawal and modification of
+          personal data communicated through cookies under the conditions
+          indicated above.
         </p>
-        <h2 className="title4 title4--margin ">Propriété intellectuelle </h2>
+        <h2 className="title4 title4--margin ">Intellectual property </h2>
         <p>
-          Toute représentation totale ou partielle de ce site, par quelque
-          personne que ce soit, sans l'autorisation expresse de l'éditeur du
-          site est interdite et constituerait une contrefaçon sanctionnée par
-          les articles du Code de la propriété intellectuelle.
+          Any total or partial representation of this site, by any person
+          whatsoever, without the express authorization of the publisher of the
+          site is prohibited and would constitute an infringement punishable by
+          articles of the Code of intellectual property.
         </p>
-        <h2 className="title4 title4--margin ">Réclamation</h2>
+        <h2 className="title4 title4--margin ">Claim</h2>
         <p>
-          Oncie a la volonté de vous apporter en permanence la meilleure qualité
-          de service. Nous restons à l’écoute de toute réclamation.
+          Oncie is committed to constantly providing you with the best quality
+          of service. We remain attentive to any complaints.
         </p>
       </TemplateTxt>
       <Footer

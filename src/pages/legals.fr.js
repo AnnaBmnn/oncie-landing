@@ -38,9 +38,9 @@ const LegalsFrenchPage = ({ location }) => {
           Déclaration relative aux cookies
         </h2>
         <p>
-          L'hébergeur du site oncie.live est la société netlify, dont le siège
-          social est situé à 610 22nd Street Suite 315 San Francisco, CA 94107
-          United States, avec le numéro de téléphone : 844-899-7312.
+          En utilisant le site web Oncie.live, vous acceptez que nous placions
+          des cookies sur votre terminal, tel que décrit dans notre Politique de
+          confidentialité et dans cette Déclaration.
         </p>
         <p>
           L'utilisateur dispose d'un droit d'accès, de retrait et de

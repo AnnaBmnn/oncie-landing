@@ -16,52 +16,49 @@ const CookiesEnglishPage = ({ location }) => {
       <Header color="color" />
       <TemplateTxt>
         <Link to={`/`}>
-          <Button>Retourner à la page d'accueil</Button>
+          <Button>Back to Home Page</Button>
         </Link>
-        <h1 className="title2 title2--margin">EN Cookies</h1>
-        <h2 className="title4 title4--margin ">Qu’est ce qu’un Cookie ?</h2>
+        <h1 className="title2 title2--margin">Cookies</h1>
+        <h2 className="title4 title4--margin ">What is a cookie ?</h2>
         <p>
-          Un cookie est un fichier texte qui est déposé sur le disque dur de
-          votre Terminal lorsque vous visitez notre site et si vous ne vous y
-          opposez pas. Il est déposé soit par Oncie, soit par un tiers
-          (partenaires publicitaires).
+          A cookie is a text file that is placed on the hard drive of your
+          Terminal when you visit our site and if you do not object. It is filed
+          either by Oncie or by a third party (advertising partners).
         </p>
-        <h2 className="title4 title4--margin ">A quoi servent-ils ?</h2>
+        <h2 className="title4 title4--margin ">What are they for ?</h2>
         <p>
-          Lors de votre navigation sur notre site, nous relevons des données qui
-          nous sont destinées. Cela nous permet notamment de mesurer l'audience
-          de notre site. Le but étant de vous assurer la meilleure utilisation
-          possible. Il est à noter que la suppression de ces Cookies peut avoir
-          des conséquences sur votre expérience utilisateur.
-        </p>
-        <h2 className="title4 title4--margin ">
-          Quels sont les Cookies utilisés par Oncie ?
-        </h2>
-        <p>Il y a 2 différentes catégories de Cookies sont utilisées:</p>
-        <p>
-          Mesure d'audience <br></br>Les Cookies de mesure d'audience permettent
-          d'établir des statistiques, de manière anonyme, sur les visites mais
-          également sur l'utilisation de notre site.
-        </p>
-        <p>
-          Affichage publicitaire <br></br>Les Cookies permettant l'affichage de
-          publicité sont déposés par des tiers (régie publicitaire par exemple).
-          Ils sont utilisés afin que ces derniers puissent mesurer la campagne
-          publicitaire mise en ligne.
+          When you browse our site, we collect data that is intended for us.
+          This allows us in particular to measure the audience of our site. The
+          goal is to ensure the best possible use.<br></br> It should be noted
+          that the deletion of these Cookies can have consequences on your user
+          experience.
         </p>
         <h2 className="title4 title4--margin ">
-          Comment refuser et / ou supprimer les cookies?
+          What cookies are used by Oncie?
         </h2>
+        <p>There are 2 different categories of Cookies used:</p>
         <p>
-          Il est possible de refuser l'utilisation des cookies en cliquant sur
-          le bouton "Je refuse" situé dans le bandeau des cookies en bas de
-          l'écran. Il vous est également possible de bloquer ou supprimer les
-          cookies en modifiant les paramètres de votre navigateur. Pour
-          désactiver les cookies :
+          Audience measurement<br></br>Audience measurement cookies make it
+          possible to establish statistics, anonymously, on visits but also on
+          the use of our site.
         </p>
         <p>
-          Microsoft Edge
-          (https://support.microsoft.com/fr-fr/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy)
+          Advertisment display <br></br>Cookies allowing the display of
+          advertising are deposited by third parties (advertising management for
+          example). They are used so that they can measure the online
+          advertising campaign.
+        </p>
+        <h2 className="title4 title4--margin ">
+          How to refuse and / or delete cookies?
+        </h2>
+        <p>
+          It is possible to refuse the use of cookies by clicking on the "I
+          refuse" button located in the cookies banner at the bottom of the
+          screen. You can also block or delete cookies by changing your browser
+          settings. To deactivate cookies:
+        </p>
+        <p>
+          (https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy)
           <br></br>Internet Explorer
           (https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies)
           <br></br>Firefox
@@ -70,9 +67,8 @@ const CookiesEnglishPage = ({ location }) => {
           <br></br>Chrome (https://support.google.com/chrome/answer/95647?hl=fr)
           <br></br>Opera
           (https://help.opera.com/en/latest/security-and-privacy/)
-          <br></br>Pour en savoir plus nous vous invitons à vous rendre sur le
-          site de la CNIL :
-          http://www.cnil.fr/vos-droits/vos-traces/les-cookies/
+          <br></br>For more information, we invite you to visit the CNIL
+          website: http://www.cnil.fr/vos-droits/vos-traces/les-cookies/
         </p>
       </TemplateTxt>
       <Footer

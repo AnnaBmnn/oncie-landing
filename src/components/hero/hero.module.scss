@@ -9,7 +9,11 @@
 }
 
 .container {
-  padding: 17vh 0;
+  padding: 20vh 0 15vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media screen and (max-width: $mediumMax) {
     //medium
     padding: 17vh 0 0;
@@ -45,8 +49,9 @@
   position: absolute;
   right: 0;
   bottom: -1px;
-  height: 95vh;
-  width: auto;
+  max-height: 95vh;
+  max-width: $column * 3 + $goutiere * 4;
+
   @media screen and (max-width: $mediumMax) {
     position: relative;
     right: unset;
