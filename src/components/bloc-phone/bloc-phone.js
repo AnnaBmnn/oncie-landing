@@ -1,4 +1,5 @@
-import React from "react"
+import React, { Fragment } from "react"
+import { Parallax } from "react-parallax"
 
 import Section from "../section/section"
 import SectionHeader from "../section-header/section-header"
@@ -28,23 +29,55 @@ const BlocPhone = ({ title, description, imgSrc, order }) => {
             />
           </div>
           <div className={blocPhoneStyles.imgContainer}>
-            <img
-              src={Blop01}
-              alt="blop deco"
-              className={blocPhoneStyles.blop01}
-            />
-            <img
-              src={Blop02}
-              alt="blop deco"
-              className={blocPhoneStyles.blop02}
-            />
-            <div className={blocPhoneStyles.bigCircle}></div>
-            <GridRound />
-            <img
-              className={blocPhoneStyles.img}
-              src={imgSrc}
-              alt="iphone en 3d et illustration"
-            />
+            <Parallax
+              bgImage={"/path/to/another/image"}
+              strength={500}
+              renderLayer={percentage => (
+                <Fragment>
+                  <img
+                    src={Blop01}
+                    alt="blop deco"
+                    className={blocPhoneStyles.blop01}
+                    style={{
+                      zIndex: "3",
+                      transition: "transform 0.2s ease-out",
+                      transform: ` rotate(${percentage * 12}deg)`,
+                    }}
+                  />
+                  <img
+                    src={Blop02}
+                    alt="blop deco"
+                    className={blocPhoneStyles.blop02}
+                    style={{
+                      zIndex: "3",
+                      transition: "transform 0.2s ease-out",
+                      transform: ` rotate(${percentage * -15}deg)`,
+                    }}
+                  />
+                  <div
+                    style={{
+                      transition: "transform 0.2s ease-out",
+                      transform: `translate(${percentage * 17}%, ${percentage *
+                        -20}%)`,
+                    }}
+                    className={blocPhoneStyles.bigCircle}
+                  ></div>
+                  <GridRound
+                    style={{
+                      transition: "transform 0.2s ease-out",
+                      transform: `translate(${percentage * -7}%, ${percentage *
+                        -10}%)`,
+                    }}
+                  />
+                </Fragment>
+              )}
+            >
+              <img
+                className={blocPhoneStyles.img}
+                src={imgSrc}
+                alt="iphone en 3d et illustration"
+              />
+            </Parallax>
           </div>
         </div>
       </Section>
