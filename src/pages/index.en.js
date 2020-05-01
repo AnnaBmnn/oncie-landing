@@ -90,39 +90,42 @@ const IndexEnglishPage = ({ location }) => (
       cookieTxt="Cookies"
       followTxt="Follow us"
     />
-    <CookieConsent
-      enableDeclineButton
-      location="bottom"
-      buttonText="Accept"
-      declineButtonText="Decline"
-      cookieName="gatsby-gdpr-google-analytics"
-      style={{
-        background: "#f3effe",
-        color: "#0a011f",
-        padding: "2px 10px 2px",
-      }}
-      contentStyle={{ margin: "20px 15px", fontSize: "15px" }}
-      buttonStyle={{
-        color: "#fbfbfd",
-        background: "#7038fa",
-        borderRadius: "8px",
-        border: "2px solid #d2c1fd",
-        fontSize: "13px",
-        margin: "0px 15px",
-        padding: "4px 18px 7px",
-      }}
-      declineButtonStyle={{
-        color: "#0a011f",
-        background: "#e3d8fe",
-        borderRadius: "8px",
-        border: "2px solid #d2c1fd",
-        fontSize: "13px",
-        margin: "0px ",
-        padding: "4px 18px 7px",
-      }}
-    >
-      This website uses cookies to improve your experience.
-    </CookieConsent>
+    <div className="sectionCookie">
+      <CookieConsent
+        enableDeclineButton
+        location="bottom"
+        buttonText="Accepter"
+        declineButtonText="Refuser"
+        cookieName="gatsby-gdpr-google-analytics"
+        style={{
+          borderRadius: "16px",
+          background: "#FBFBFD",
+          color: "#2A2537",
+          padding: "2px 10px 2px",
+        }}
+        contentStyle={{ margin: "20px 15px", fontSize: "15px" }}
+        buttonStyle={{
+          color: "#fbfbfd",
+          background: "#7038fa",
+          borderRadius: "8px",
+          border: "2px solid #d2c1fd",
+          fontSize: "13px",
+          margin: "0px 15px",
+          padding: "4px 18px 7px",
+        }}
+        declineButtonStyle={{
+          color: "#2A2537",
+          background: "#FBFBFD",
+          borderRadius: "8px",
+          border: "2px solid #FBFBFD",
+          fontSize: "13px",
+          margin: "0px ",
+          padding: "4px 18px 7px",
+        }}
+      >
+        This website uses cookies to improve your experience.
+      </CookieConsent>
+    </div>
   </Layout>
 )
 

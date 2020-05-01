@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 15vh 0 25vh;
+  font-weight: 500;
   @media screen and (max-width: $smallMax) {
     margin: 10vh 0;
     flex-direction: column;

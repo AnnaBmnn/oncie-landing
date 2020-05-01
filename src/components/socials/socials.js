@@ -22,17 +22,17 @@ const Socials = ({ colorType }) => {
   return (
     <div className={socialsStyles.socials}>
       <Social
-        link="https://twitter.com/"
+        link="https://twitter.com/OncieLive"
         name="twitter"
         img={TwitterImg}
       ></Social>
       <Social
-        link="https://linkedin.com/"
+        link="https://www.linkedin.com/company/oncie"
         name="linkedin"
         img={LinkedinImg}
       ></Social>
       <Social
-        link="https://producthunt.com/"
+        link="https://www.producthunt.com/upcoming/oncie"
         name="Product Hunt"
         img={ProductHuntImg}
       ></Social>

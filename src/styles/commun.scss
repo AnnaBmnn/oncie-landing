@@ -1,6 +1,7 @@
 @import "./constants.scss";
 
 .title2 {
+  color: $black;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -20,6 +21,8 @@
 }
 
 .title3 {
+  color: $black;
+
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -32,6 +35,8 @@
 }
 
 .title4 {
+  color: $black;
+
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -63,5 +68,35 @@
   color: $grey800;
   @media screen and (max-width: $smallMax) {
     text-align: center;
+  }
+}
+
+.sectionCookie {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1088px;
+  margin: 0 auto;
+  max-width: 90vw;
+
+  @media screen and (min-width: $mediumMax) {
+    //up medium
+    width: 1088px;
+  }
+
+  @media screen and (max-width: $mediumMax) {
+    //medium
+    width: 864px;
+  }
+
+  @media screen and (max-width: $smallMax) {
+    //small
+    width: 640px;
+  }
+
+  @media screen and (max-width: $baseMax) {
+    //base
+    width: 414px;
   }
 }

@@ -176,8 +176,9 @@ html {
   box-sizing: inherit;
 }
 body {
+  background-color: $white;
   color: $black;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 32px;
   font-family: "Gellix", sans-serif;
@@ -404,6 +405,10 @@ hr {
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
+}
+div {
+  color: $grey800;
+  font-weight: 500;
 }
 b {
   font-weight: bold;
