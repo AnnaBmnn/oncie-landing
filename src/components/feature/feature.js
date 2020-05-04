@@ -31,8 +31,8 @@ const Feature = ({ imgSrc, title, description, colorType }) => {
               <div
                 style={{
                   transition: "transform 0.2s ease-out",
-                  transform: `translate(${percentage * 17}%, ${percentage *
-                    -20}%)`,
+                  transform: `translate(${percentage * 26}%, ${percentage *
+                    -30}%) scale(${percentage * 0.01 + 1})`,
                 }}
                 className={featureStyles.bigCircle}
               ></div>
@@ -40,7 +40,7 @@ const Feature = ({ imgSrc, title, description, colorType }) => {
                 style={{
                   transition: "transform 0.2s ease-out",
                   transform: `translate(${percentage * -10}%, ${percentage *
-                    10}%)`,
+                    13}%) scale(${percentage * 0.3 + 1})`,
                 }}
               />
             </Fragment>

@@ -18,7 +18,7 @@ const BlocImgTxt = ({ imgSrc, title, description }) => (
               style={{
                 zIndex: "3",
                 transition: "transform 0.2s ease-out",
-                transform: ` rotate(${percentage * -15}deg)`,
+                transform: ` rotate(${percentage * 22}deg)`,
               }}
               src={Blop}
               alt="blop deco"
@@ -35,14 +35,15 @@ const BlocImgTxt = ({ imgSrc, title, description }) => (
             <div
               style={{
                 transition: "transform 0.1s ease-in",
-                transform: `scale(${percentage * 0.5 + 1})`,
+                transform: `scale(${percentage * 0.4 + 1})`,
               }}
               className={blocImgTxtStyles.smallCircle}
             ></div>
             <GridRoundRec
               style={{
                 transition: "transform 0.2s ease-out",
-                transform: `translate(${percentage * -7}%, ${percentage * 7}%)`,
+                transform: `translate(${percentage * -7}%, ${percentage *
+                  7}%) scale(${percentage * 0.1 + 1})`,
               }}
             />
           </Fragment>

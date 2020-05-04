@@ -41,7 +41,7 @@ const BlocPhone = ({ title, description, imgSrc, order }) => {
                     style={{
                       zIndex: "3",
                       transition: "transform 0.2s ease-out",
-                      transform: ` rotate(${percentage * 12}deg)`,
+                      transform: ` rotate(${percentage * 35}deg)`,
                     }}
                   />
                   <img
@@ -51,22 +51,21 @@ const BlocPhone = ({ title, description, imgSrc, order }) => {
                     style={{
                       zIndex: "3",
                       transition: "transform 0.2s ease-out",
-                      transform: ` rotate(${percentage * -15}deg)`,
+                      transform: ` rotate(${percentage * -31}deg)`,
                     }}
                   />
                   <div
                     style={{
                       transition: "transform 0.2s ease-out",
-                      transform: `translate(${percentage * 17}%, ${percentage *
-                        -20}%)`,
+                      transform: `scale(${percentage * 0.9 + 1})`,
                     }}
                     className={blocPhoneStyles.bigCircle}
                   ></div>
                   <GridRound
                     style={{
                       transition: "transform 0.2s ease-out",
-                      transform: `translate(${percentage * -7}%, ${percentage *
-                        -10}%)`,
+                      transform: `translate(${percentage * -10}%, ${percentage *
+                        -13}%) scale(${percentage * 0.1 + 1})`,
                     }}
                   />
                 </Fragment>
