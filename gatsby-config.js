@@ -77,26 +77,26 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "PRWD95X",
-        // id: "GTM-PRWD95X",
+    // {
+    //   resolve: "gatsby-plugin-google-tagmanager",
+    //   options: {
+    //     // id: "PRWD95X",
+    //     id: "GTM-PRWD95X",
 
-        // Include GTM in development.
-        // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
+    //     // Include GTM in development.
+    //     // Defaults to false meaning GTM will only be loaded in production.
+    //     includeInDevelopment: false,
 
-        // datalayer to be set before GTM is loaded
-        // should be an object or a function that is executed in the browser
-        // Defaults to null
-        defaultDataLayer: function() {
-          return {
-            pageType: window.pageType,
-          }
-        },
-      },
-    },
+    //     // datalayer to be set before GTM is loaded
+    //     // should be an object or a function that is executed in the browser
+    //     // Defaults to null
+    //     defaultDataLayer: function() {
+    //       return {
+    //         pageType: window.pageType,
+    //       }
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -115,7 +115,7 @@ module.exports = {
           cookieName: "gatsby-gdpr-facebook-pixel", // default
         },
         // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ["production", "development"],
+        environments: ["production"],
       },
     },
   ],
