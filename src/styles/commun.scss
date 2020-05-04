@@ -112,3 +112,6 @@
 .react-parallax {
   overflow: visible !important;
 }
+.react-parallax-bgimage {
+  -webkit-backface-visibility: hidden !important;
+}
