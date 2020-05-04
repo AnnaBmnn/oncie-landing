@@ -10,7 +10,7 @@ const BlocImgTxt = ({ imgSrc, title, description }) => (
   <div className={blocImgTxtStyles.blocImgTxt}>
     <div className={blocImgTxtStyles.imgContainer}>
       <Parallax
-        bgImage={"/path/to/another/image"}
+        bgImage={"/"}
         strength={500}
         renderLayer={percentage => (
           <Fragment>

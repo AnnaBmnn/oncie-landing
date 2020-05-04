@@ -17,7 +17,7 @@ const Feature = ({ imgSrc, title, description, colorType }) => {
     <div className={`${featureStyles.feature} ${colorTypeClass}`}>
       <div className={featureStyles.imgContainer}>
         <Parallax
-          bgImage={"/path/to/another/image"}
+          bgImage={"/"}
           strength={500}
           renderLayer={percentage => (
             <Fragment>

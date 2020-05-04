@@ -30,7 +30,7 @@ const BlocPhone = ({ title, description, imgSrc, order }) => {
           </div>
           <div className={blocPhoneStyles.imgContainer}>
             <Parallax
-              bgImage={"/path/to/another/image"}
+              bgImage={"/"}
               strength={500}
               renderLayer={percentage => (
                 <Fragment>
