@@ -68,7 +68,7 @@ const LegalsEnglishPage = ({ location }) => {
           location="bottom"
           buttonText="Accepter"
           declineButtonText="Refuser"
-          cookieName="gatsby-gdpr-google-analytics"
+          cookieName="gatsby-gdpr-google-tagmanager"
           style={{
             borderRadius: "16px",
             background: "#FBFBFD",
