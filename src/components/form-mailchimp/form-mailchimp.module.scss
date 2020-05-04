@@ -17,7 +17,7 @@
     flex-direction: row;
     // align-items: center;
   }
-  @media screen and (max-width: $baseMax) {
+  @media screen and (max-width: 715px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
