@@ -102,7 +102,7 @@
 }
 
 .description {
-  transition: opacity 0.5s ease-in-out, transform 0.3s 0s ease-in-out !important;
+  transition: opacity 0.5s ease-out, transform 0.3s 0s ease-out !important;
 }
 
 .sal-animate {
@@ -112,6 +112,7 @@
 .react-parallax {
   overflow: visible !important;
 }
+
 .react-parallax-bgimage {
   -webkit-backface-visibility: hidden !important;
   display: none;

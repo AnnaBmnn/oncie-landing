@@ -38,8 +38,8 @@ const IndexFrenchPage = ({ location }) => {
         />
         <BlocImgText
           imgSrc={img}
-          title="Replacez l’interaction au coeur de votre contenu"
-          description="Vous qui partagez vos passions, racontez des histoires, critiquez l’actualité, parlez de société, commentez le sport... Prenez l’antenne et offrez à votre communauté un show unique et interactif. "
+          title="Vos auditeur.ices sont juste de l’autre côté du micro"
+          description="Pour eux, c’est l’opportunité d’être immergé au sein d’une communauté, d’accéder à du contenu exclusif, d’échanger, de réagir, de poser des questions. <br> Laissez la possibilité à votre audience de prendre la parole et d’être acteur de leur consommation."
         />
       </Section>
       <BlocPhone
@@ -52,15 +52,15 @@ const IndexFrenchPage = ({ location }) => {
         <SectionHeader
           width="small"
           title="C'est parti, vous êtes en live"
-          description="Oncie vous accompagne dans la création et la gestion de vos diffusions audio en direct, pour des interventions simplifiées et de qualité."
+          description="Oncie vous accompagne dans la création et la gestion de vos diffusions audio en direct, pour des interventions fluides et de qualité."
         />
         <Features
           title1="La meilleure façon d’interagir avec votre communauté en temps réel"
-          description1="Oncie vous permet de recevoir les questions et commentaires les plus pertinents via un système de vote. Sondages, réactions, partage d’émotions : le live chat laisse la place aux témoignages de votre communauté en temps réel.  Rencontrez vos auditeur.ices et de renforcez le lien qui vous rassemble."
-          title2="L'opportunité d’animer des émission à plusieurs"
-          description2="Avez-vous déjà pensé à inviter une personne lors d’une émission ? Planifier un interview à distance ou diffuser un témoignage spontané d’une de vos auditeur.ices est desormais possible grâce à la fonctionnalité mutli-live."
-          title3="Libre à vous de cultiver un univers qui vous ressemble"
-          description3="Personnalisez et caractérisez vos émissions en ajoutant jingles et bandes son. Accédez aux données relatives à votre activité (nombre d’écoutes, interactions) pour comprendre votre audimat et optimiser l’impact de vos interventions."
+          description1="Oncie vous permet de recevoir les questions et commentaires les plus pertinents via un système de vote. Sondages, réactions, partage d’émotions : le live chat laisse la place aux messages de votre communauté en temps réel. "
+          title2="L’opportunité d’animer des émission à plusieurs "
+          description2="Avez-vous déjà pensé à inviter une personne lors d’une émission ? Planifier une interview à distance ou diffuser un témoignage spontané d’une de vos auditeur.ices est desormais possible grâce à la fonctionnalité mutli-live. "
+          title3="Du détail pour faire grandir votre émission avec justesse"
+          description3="Personnalisez et caractérisez vos émissions en ajoutant jingles et bandes son. Accédez aux données relatives à votre activité (nombre d’écoutes, interactions) pour comprendre votre audimat et optimiser l’impact de vos interventions."
         ></Features>
         <Line isReverse={true} />
       </Section>
@@ -68,7 +68,7 @@ const IndexFrenchPage = ({ location }) => {
         order="reverse"
         imgSrc={phoneBottom}
         title="Votre travail est précieux, il doit être rémunéré."
-        description="Recherches, rédaction, interviews, animation, communication... La création de contenu audio de qualité est une activité complète et exigente. Votre contribution a une forte valeur ajoutée pour les auditeur.ice.s. C’est pourquoi, nous souhaitons que votre travail soit rémunéré."
+        description="Recherches, rédaction, interviews, animation, communication... La création de contenu audio de qualité est une activité complète et exigente. C’est pourquoi, nous faisons en sorte que votre travail soit rémunéré grâce aux dons, à l’abonnement et à la publicité."
       ></BlocPhone>
       <Insert title="Oncie fait vibrer votre audience."></Insert>
       <Section>
