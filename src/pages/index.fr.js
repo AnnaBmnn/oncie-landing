@@ -10,12 +10,14 @@ import BlocImgText from "../components/bloc-img-txt/bloc-img-txt"
 import BlocPhone from "../components/bloc-phone/bloc-phone"
 import Features from "../components/features/features"
 import Insert from "../components/insert/insert"
+import ImgFullWidth from "../components/img-full-width/img-full-width"
 import CallToAction from "../components/cta/cta"
 import Line from "../components/line/line"
 import Footer from "../components/footer/footer"
 import CookieConsent from "react-cookie-consent"
 
 import img from "../images/mobile.png"
+import maquetteImg from "../images/maquette.png"
 import phoneTop from "../images/phone_top.png"
 import phoneBottom from "../images/phone_bottom.png"
 
@@ -36,6 +38,10 @@ const IndexFrenchPage = ({ location }) => {
           title="Oncie permet à tous les podcasteur.ices d’offrir à leur communauté une nouvelle expérience audio "
           titleHighlight=" en live"
         />
+        <ImgFullWidth
+          imgSrc={maquetteImg}
+          txt="Une interface simple et accessible, au service d’émissions interactives et exclusives."
+        ></ImgFullWidth>
         <BlocImgText
           imgSrc={img}
           title="Vos auditeur.ices sont juste de l’autre côté du micro"
