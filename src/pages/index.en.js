@@ -102,6 +102,7 @@ const IndexEnglishPage = ({ location }) => (
           background: "#FBFBFD",
           color: "#2A2537",
           padding: "2px 10px 2px",
+          border: "2px solid #A17DFB",
         }}
         contentStyle={{ margin: "20px 15px", fontSize: "15px" }}
         buttonStyle={{
