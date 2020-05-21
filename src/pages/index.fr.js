@@ -45,7 +45,7 @@ const IndexFrenchPage = ({ location }) => {
         <BlocImgText
           imgSrc={img}
           title="Vos auditeur.ices sont juste de l’autre côté du micro"
-          description="Pour eux, c’est l’opportunité d’être immergé au sein d’une communauté, d’accéder à du contenu exclusif, d’échanger, de réagir, de poser des questions. <br> Laissez la possibilité à votre audience de prendre la parole et d’être acteur de leur consommation."
+          description="Pour eux, c’est l’opportunité d’être immergé au sein d’une communauté, d’accéder à du contenu exclusif, d’échanger, de réagir, de poser des questions. Laissez la possibilité à votre audience de prendre la parole et d’être acteur de leur consommation."
         />
       </Section>
       <BlocPhone
