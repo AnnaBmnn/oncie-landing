@@ -2,6 +2,20 @@
 
 .imgFullWidth {
   margin-top: 13vh;
+
+  svg {
+    position: absolute;
+    z-index: -2;
+
+    @media screen and (max-width: $smallMax) {
+      width: 95px;
+      top: -121px;
+    }
+
+    circle {
+      fill: $purple400;
+    }
+  }
 }
 
 .title {
@@ -21,20 +35,6 @@
 
 .img {
   width: 100%;
-}
-
-svg {
-  position: absolute;
-  z-index: -2;
-
-  @media screen and (max-width: $smallMax) {
-    width: 95px;
-    top: -121px;
-  }
-
-  circle {
-    fill: $purple400;
-  }
 }
 
 .bigCircle {

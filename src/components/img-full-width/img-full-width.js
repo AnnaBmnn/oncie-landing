@@ -47,7 +47,14 @@ const ImgFullWidth = ({ imgSrc, txt }) => {
             alt="iphone en 3d et illustration"
           />
         </Parallax>
-        <h3 className={imgFullWidthStyles.title}>{txt}</h3>
+        <h3
+          className={`description ${imgFullWidthStyles.title}`}
+          data-sal="slide-up"
+          data-sal-delay="800"
+          data-sal-easing="ease"
+        >
+          {txt}
+        </h3>
       </Section>
     </div>
   )

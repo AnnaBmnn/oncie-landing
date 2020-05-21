@@ -36,9 +36,6 @@
   @media screen and (max-width: $baseMax) {
     margin-bottom: 50px;
     text-align: center;
-    img {
-      width: 100%;
-    }
   }
 }
 
@@ -46,22 +43,22 @@
   .blop {
     width: 180px;
     top: 90px;
-    right: 20px;
+    right: 5vw;
     position: absolute;
 
     @media screen and (max-width: $smallMax) {
       width: 170px;
       top: 30px;
-      right: 2px;
+      right: 20px;
     }
   }
   .bigCircle {
     position: absolute;
-    bottom: 240px;
-    right: -10px;
+    bottom: 200px;
+    right: -15px;
     background-color: $orange300;
-    height: 229px;
-    width: 229px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     z-index: -1;
 
@@ -78,12 +75,12 @@
   }
   .smallCircle {
     position: absolute;
-    right: 45px;
-    bottom: 110px;
+    right: 8vw;
+    bottom: 6vw;
 
     background-color: $orange500;
-    width: 57px;
-    height: 57px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 
     @media screen and (max-width: $smallMax) {
@@ -99,17 +96,19 @@
   }
   svg {
     position: absolute;
-    left: -22px;
-    top: 133px;
+    left: 25px;
+    top: -8px;
     z-index: -1;
+    width: 15vw;
     @media screen and (max-width: $smallMax) {
       height: 295px;
-      left: -17px;
+      left: 0px;
       top: -15px;
+      width: 35vw;
     }
     @media screen and (max-width: $baseMax) {
       height: 295px;
-      left: -17px;
+      left: 0px;
       top: -15px;
     }
   }
