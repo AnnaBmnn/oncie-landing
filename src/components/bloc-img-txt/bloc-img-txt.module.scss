@@ -16,8 +16,10 @@
 .imgContainer {
   width: $column * 5 + $goutiere * 4;
   position: relative;
+  text-align: center;
+
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
   @media screen and (max-width: $mediumMax) {
