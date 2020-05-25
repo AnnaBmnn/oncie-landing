@@ -3,7 +3,7 @@ module.exports = {
     title: `Oncie, the live audio app`,
     description: `Oncie is a live audio app that enables podcasters to interact with their communities through a new live audio experience`,
     author: `Oncie`,
-    siteUrl: `https://oncie.netlify.app`,
+    siteUrl: `https://oncie.live`,
   },
   plugins: [
     {

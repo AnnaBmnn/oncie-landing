@@ -44,7 +44,7 @@ const IndexEnglishPage = ({ location }) => (
       <BlocImgText
         imgSrc={img}
         title="Your listeners are right there, on the other side of the mic"
-        description="By offering a live on Oncie, you are giving your community the opportunity to access exclusive content, to exchange, react, ask questions, or even speak and be an actor in their consumption. But above all, to feel part of a community that resembles them and brings you together."
+        description="By offering a live on Oncie, you are giving your community the opportunity to access exclusive content, to interact, react, ask questions, or even raising your voice to become an actor of their consumption. But above all, to feel part of a community that look like them and brings you together."
       />
     </Section>
     <BlocPhone
