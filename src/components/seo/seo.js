@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:site`,
@@ -78,7 +78,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: "src/images/favicon.png",
+          content: "../../socials_card/Share_Twitter.png",
         },
       ]
         .concat(
