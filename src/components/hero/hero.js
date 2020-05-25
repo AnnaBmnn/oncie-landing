@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 import FomMailChimp from "../form-mailchimp/form-mailchimp"
 import Section from "../section/section"
-// import MockupContent from "../image/image"
 
 import microphone from "../../images/microphone.png"
 
