@@ -64,7 +64,7 @@ const IndexEnglishPage = ({ location }) => (
         description1="Receive the most relevant questions and comments thanks to an upvote system. Polls, reactions, emotions sharing : the live chat lets your community participate in real time. "
         title2="The chance to host a show together"
         description2="Did you ever want to invite someone on your show&nbsp;? Planning a remote interview or letting a listener join you on air is now possible thanks to the multi-live feature."
-        title3="The attention to details to make your show grow in the right way"
+        title3="Make your show grow fittingly, down to the last detail"
         description3="Customize and give character to your shows by adding jingles and music. Get access to your shows data (number of listeners, interactions) to understand your audience and optimize the impact of your interventions."
       ></Features>
       <Line isReverse={true} />
