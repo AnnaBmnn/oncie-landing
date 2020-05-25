@@ -16,8 +16,8 @@ import Line from "../components/line/line"
 import Footer from "../components/footer/footer"
 import CookieConsent from "react-cookie-consent"
 
-import img from "../images/mobile.png"
-import maquetteImg from "../images/maquette.png"
+import img from "../images/Liveroom.png"
+import maquetteImg from "../images/Dashboard.png"
 import phoneTop from "../images/phone_top.png"
 import phoneBottom from "../images/phone_bottom.png"
 
