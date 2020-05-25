@@ -81,8 +81,8 @@ const CookiesEnglishPage = ({ location }) => {
         <CookieConsent
           enableDeclineButton
           location="bottom"
-          buttonText="Accepter"
-          declineButtonText="Refuser"
+          buttonText="Accept"
+          declineButtonText="Decline"
           cookieName="gatsby-gdpr-google-analytics"
           style={{
             borderRadius: "16px",

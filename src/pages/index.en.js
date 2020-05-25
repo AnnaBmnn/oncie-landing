@@ -34,40 +34,38 @@ const IndexEnglishPage = ({ location }) => (
     <Section>
       <SectionHeader
         width="big"
-        title=" EN Oncie permet à tous les podcasteur.ices d’offrir à leur communauté une nouvelle expérience audio "
         title="Oncie enables podcasters to offer a new experience for their communities through "
         titleHighlight="live audio"
       />
       <ImgFullWidth
         imgSrc={maquetteImg}
-        txt="Une interface simple et accessible, au service d’émissions interactives et exclusives."
+        txt="An simple and accessible interface, for interactive and exclusive shows"
       ></ImgFullWidth>
       <BlocImgText
         imgSrc={img}
-        title="It's your turn to be on air"
-        description="You, who shares your passions, tell stories, dissect the news, discuss society, comment on sports... Go on air and gift your audience with a unique and interactive show."
+        title="Your listeners are right there, on the other side of the mic"
+        description="For them, it's an opportunity to be part of a community, to get exclusive content, to exchange, to react, to ask questions. Give your audience the chance to be part of the conversation."
       />
     </Section>
     <BlocPhone
       imgSrc={phoneTop}
       title="It's time to connect with your audience"
-      description="Simply start your live streaming...."
+      description="Simply start your live audio stream...."
     ></BlocPhone>
     <Section>
       <Line isReverse={false} />
       <SectionHeader
         width="small"
         title="Ready, set, go! You're on air"
-        description="EN Oncie vous accompagne dans la création et la gestion de vos diffusions audio en direct, pour des interventions simplifiées et de qualité."
-        description="Oncie helps you create and manage your live audio streams, for simple and high-quality shows."
+        description="Oncie helps you create and manage your live audio streams, for smooth and high-quality shows."
       />
       <Features
         title1="The best way to interact with your community in real time"
-        description1="Receive the most relevant questions and comments thanks to an upvote system. Polls, reactions, emotions sharing : the live chat lets your community participate in real time. Meet your listeners and find what brings you together."
+        description1="Receive the most relevant questions and comments thanks to an upvote system. Polls, reactions, emotions sharing : the live chat lets your community participate in real time. "
         title2="The chance to host a show together"
         description2="Did you ever want to invite someone on your show&nbsp;? Planning a remote interview or letting a listener join you on air is now possible thanks to the multi-live feature."
-        title3="The freedom to make it your own"
-        description3="Customize and give character to your shows by adding jingles and music.  Get access to your shows data (number of listeners, interactions) to understand your audience and optimize the impact of your interventions."
+        title3="The attention to details to make your show grow in the right way"
+        description3="Customize and give character to your shows by adding jingles and music. Get access to your shows data (number of listeners, interactions) to understand your audience and optimize the impact of your interventions."
       ></Features>
       <Line isReverse={true} />
     </Section>
@@ -77,7 +75,7 @@ const IndexEnglishPage = ({ location }) => (
       title="Your work is valuable, it should be remunerated"
       description="Research, writing, interviews, animation, communication... The creation of quality audio content is a complete and demanding activity. Your contribution has a lot of value for your listeners. This is why, we would like your work to be remunerated."
     ></BlocPhone>
-    <Insert title="Oncie makes your audience vibrate"></Insert>
+    <Insert title="Oncie keeps your audience spellbound"></Insert>
     <Section>
       <SectionHeader
         width="big"
@@ -100,8 +98,8 @@ const IndexEnglishPage = ({ location }) => (
       <CookieConsent
         enableDeclineButton
         location="bottom"
-        buttonText="Accepter"
-        declineButtonText="Refuser"
+        buttonText="Accept"
+        declineButtonText="Decline"
         cookieName="gatsby-gdpr-google-analytics"
         style={{
           borderRadius: "16px",
