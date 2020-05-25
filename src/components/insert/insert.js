@@ -11,7 +11,7 @@ const Insert = ({ title }) => (
   <Section>
     <div className={insertStyles.container}>
       <div className={insertStyles.insert}>
-        <h1 className={insertStyles.title}>{title}</h1>
+        <h2 className={insertStyles.title}>{title}</h2>
         <img
           className={insertStyles.img}
           src={microphone}
