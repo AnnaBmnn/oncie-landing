@@ -89,7 +89,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.imgTwitter,
+          content: `${siteUrl}${site.siteMetadata.imgTwitter}`,
         },
       ]
         .concat(
