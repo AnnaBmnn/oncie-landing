@@ -45,13 +45,13 @@ const IndexFrenchPage = ({ location }) => {
         <BlocImgText
           imgSrc={img}
           title="Vos auditeur.ices sont juste de l’autre côté du micro"
-          description="Pour eux, c’est l’opportunité d’être immergé au sein d’une communauté, d’accéder à du contenu exclusif, d’échanger, de réagir, de poser des questions. Laissez la possibilité à votre audience de prendre la parole et d’être acteur de leur consommation."
+          description="En proposant un live sur Oncie, vous offrez l’opportunité à votre communauté d’accéder à du contenu exclusif, d’échanger, de réagir, de poser des questions, voire même de prendre la parole et d’être acteur.ices dans leur consommation. Mais surtout, de se sentir part entière d’une communauté qui leur ressemble et vous rassemble."
         />
       </Section>
       <BlocPhone
         imgSrc={phoneTop}
         title="L’heure est venue de vous connecter avec votre audience"
-        description="Démarrez simplement votre diffusion audio...."
+        description="Démarrez simplement votre diffusion audio."
       ></BlocPhone>
       <Section>
         <Line isReverse={false} />
@@ -65,7 +65,7 @@ const IndexFrenchPage = ({ location }) => {
           description1="Oncie vous permet de recevoir les questions et commentaires les plus pertinents via un système de vote. Sondages, réactions, partage d’émotions : le live chat laisse la place aux messages de votre communauté en temps réel. "
           title2="L’opportunité d’animer des émission à plusieurs "
           description2="Avez-vous déjà pensé à inviter une personne lors d’une émission ? Planifier une interview à distance ou diffuser un témoignage spontané d’une de vos auditeur.ices est desormais possible grâce à la fonctionnalité mutli-live. "
-          title3="Du détail pour faire grandir votre émission avec justesse"
+          title3="Faites grandir votre émission, tout en détail"
           description3="Personnalisez et caractérisez vos émissions en ajoutant jingles et bandes son. Accédez aux données relatives à votre activité (nombre d’écoutes, interactions) pour comprendre votre audimat et optimiser l’impact de vos interventions."
         ></Features>
         <Line isReverse={true} />
@@ -74,14 +74,14 @@ const IndexFrenchPage = ({ location }) => {
         order="reverse"
         imgSrc={phoneBottom}
         title="Votre travail est précieux, il doit être rémunéré."
-        description="Recherches, rédaction, interviews, animation, communication... La création de contenu audio de qualité est une activité complète et exigente. C’est pourquoi, nous faisons en sorte que votre travail soit rémunéré grâce aux dons, à l’abonnement et à la publicité."
+        description="Recherches, rédaction, interviews, animation, communication... La création de contenu audio de qualité est une activité complète et exigente. C’est pourquoi, nous faisons en sorte que votre travail soit rémunéré grâce aux dons, à l’abonnement et à la publicité."
       ></BlocPhone>
       <Insert title="Oncie fait vibrer votre audience."></Insert>
       <Section>
         <SectionHeader
           width="big"
           title="Vous souhaitez tester en exclusivité la bêta ?"
-          description="Soyez le.a premier.e à utiliser Oncie avant sa sortie publique."
+          description="Entrez votre email et soyez le.a premier.e à utiliser Oncie avant sa sortie publique."
         />
         <CallToAction
           placeHolderTxt="Entrez votre email"

@@ -50,7 +50,7 @@ const IndexEnglishPage = ({ location }) => (
     <BlocPhone
       imgSrc={phoneTop}
       title="It's time to connect with your audience"
-      description="Simply start your live audio stream...."
+      description="Simply start your live audio stream."
     ></BlocPhone>
     <Section>
       <Line isReverse={false} />
@@ -80,7 +80,7 @@ const IndexEnglishPage = ({ location }) => (
       <SectionHeader
         width="big"
         title="Would you like to get exclusive early access ?"
-        description="Be amongst the firsts to discover Oncie before the official release."
+        description="Enter your email and be amongst the firsts to discover Oncie before the official release."
       />
       <CallToAction
         lang={location.pathname}

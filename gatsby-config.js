@@ -78,7 +78,6 @@ module.exports = {
             name: "MyIcon",
             props: {
               className: "svg",
-              title: "svg",
             },
             filters: [value => console.log(value)],
           },

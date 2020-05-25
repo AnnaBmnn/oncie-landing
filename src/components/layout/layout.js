@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import CookieConsent from "react-cookie-consent"
 
 import "../../styles/typographie.scss"
 import "../../styles/constants.scss"
