@@ -61,7 +61,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: site.siteMetadata.imgFacebook,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.imgFacebook}`,
         },
         {
           name: `twitter:card`,
@@ -89,7 +89,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: `${siteUrl}${site.siteMetadata.imgTwitter}`,
+          content: `${site.siteMetadata.siteUrl}${site.siteMetadata.imgTwitter}`,
         },
       ]
         .concat(
