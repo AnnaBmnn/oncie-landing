@@ -4,6 +4,9 @@ module.exports = {
     description: `Oncie is a live audio app that enables podcasters to interact with their communities through a new live audio experience`,
     author: `Oncie`,
     siteUrl: `https://oncie.live`,
+    imgTwitter: `/socials_card/Share_Twitter.png`,
+    imgFacebook: `/socials_card/Share_Facebook.png`,
+    imgLinkedin: `/socials_card/Share_Linkedin.png`,
   },
   plugins: [
     {

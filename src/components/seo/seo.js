@@ -20,6 +20,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             description
             author
             siteUrl
+            imgTwitter
+            imgFacebook
+            imgLinkedin
           }
         }
       }
@@ -53,6 +56,14 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.imgFacebook,
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
@@ -78,7 +89,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: "/socials_card/Share_Twitter.png",
+          content: site.siteMetadata.imgTwitter,
         },
       ]
         .concat(
