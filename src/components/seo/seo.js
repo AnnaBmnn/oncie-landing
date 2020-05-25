@@ -78,7 +78,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: "../../socials_card/Share_Twitter.png",
+          content: "/socials_card/Share_Twitter.png",
         },
       ]
         .concat(
