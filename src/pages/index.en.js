@@ -39,7 +39,7 @@ const IndexEnglishPage = ({ location }) => (
       />
       <ImgFullWidth
         imgSrc={maquetteImg}
-        txt="An simple and accessible interface, for interactive and exclusive shows"
+        txt="A simple and accessible interface, for interactive and exclusive shows"
       ></ImgFullWidth>
       <BlocImgText
         imgSrc={img}
@@ -65,14 +65,14 @@ const IndexEnglishPage = ({ location }) => (
         title2="The chance to host a show together"
         description2="Did you ever want to invite someone on your show&nbsp;? Planning a remote interview or letting a listener join you on air is now possible thanks to the multi-live feature."
         title3="Make your show grow fittingly, down to the last detail"
-        description3="Customize and give character to your shows by adding jingles and music. Get access to your shows data (number of listeners, interactions) to understand your audience and optimize the impact of your interventions."
+        description3="Customize and give character to your shows by adding jingles and music. Get access to your show's data (number of listeners, interactions) to understand your audience and optimize the impact of your interventions."
       ></Features>
       <Line isReverse={true} />
     </Section>
     <BlocPhone
       order="reverse"
       imgSrc={phoneBottom}
-      title="Your work is valuable, it should be remunerated"
+      title="Your work is valuable, and you deserve to be paid for it"
       description="Research, writing, interviews, animation, communication... The creation of quality audio content is a complete and demanding activity. Your contribution has a lot of value for your listeners. This is why, we would like your work to be remunerated."
     ></BlocPhone>
     <Insert title="Oncie keeps your audience spellbound"></Insert>
