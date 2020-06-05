@@ -14,7 +14,7 @@ const FormMailchimp = ({ lang, center, ctaTxt, placeHolderTxt }) => {
   const [message, setMessage] = useState()
   const [messageClass, setMessageClass] = useState()
 
-  const sendingMessage = lang === "/en" ? "Sending..." : "Envoie en cours..."
+  const sendingMessage = lang === "/en" ? "Sending..." : "Envoi en cours..."
   const successMessage =
     lang === "/en"
       ? "Let's go ! You are on the list"
@@ -22,7 +22,7 @@ const FormMailchimp = ({ lang, center, ctaTxt, placeHolderTxt }) => {
 
   const errorMessage =
     lang === "/en"
-      ? "It looks like there is a problem with your emai"
+      ? "It looks like there is a problem with your email"
       : "Il semblerait qu’il y ait un problème avec votre mail..."
 
   const alreadySubscribeMessage =
