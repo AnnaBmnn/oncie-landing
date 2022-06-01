@@ -29,7 +29,7 @@
     "react-helmet": "^5.2.0",
     "react-intersection-observer": "^8.26.2",
     "react-parallax": "^3.0.3",
-    "sharp": "^0.22.0"
+    "sharp": "^0.30.5"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
